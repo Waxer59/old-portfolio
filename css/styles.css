@@ -76,6 +76,9 @@ html {
 .container .header .nav-ul li button:hover {
   color: #ececec;
 }
+.container .header .hide {
+  display: none;
+}
 
 .main h1 {
   text-align: center;

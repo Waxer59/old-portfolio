@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minidev</title>
+    <meta name="description" content="Hi!, i'm Minidev and i'm a fullstack developer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
                 <li><button id="skillset-btn" type="button">Skillset</button></li>
                 <li><button id="contact-btn" type="button">Contact</button></li>
             </ul>
-            <button id="toggler" type="button" class="toggler"><i class="fa-solid fa-moon"></i></button>
+            <button id="toggler" type="button" class="toggler"><i class="fa-solid fa-moon" id="dark"></i><i class="fa-solid fa-sun hide" id="bright"></i></button>
         </header>
 
     </div>
@@ -35,7 +36,7 @@
         <img src="./images/04.jpg" alt="">
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#2c2c2c" fill-opacity="1"
+            <path fill="#2c2c2c" fill-opacity="1" id="wave"
                 d="M0,32L40,32C80,32,160,32,240,42.7C320,53,400,75,480,106.7C560,139,640,181,720,186.7C800,192,880,160,960,122.7C1040,85,1120,43,1200,37.3C1280,32,1360,64,1400,80L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
             </path>
         </svg>
@@ -345,7 +346,7 @@
         </div>
 
         <div class="contact" id="contact">
-            <a href="mailto:hnboyano@gmail.com">Contact me!</a>
+            <a href="mailto:hnboyano@gmail.com" id="contact-mail">Contact me!</a>
         </div>
 
     </main>
