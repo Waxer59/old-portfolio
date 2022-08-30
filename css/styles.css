@@ -1,6 +1,9 @@
 body {
   background: #1c1c1c;
-  font-size: 8px;
+}
+
+html {
+  font-size: 16px;
 }
 
 * {
@@ -9,16 +12,6 @@ body {
   color: #858585;
 }
 
-body .container {
-  border: 1px solid red;
-  max-width: 1440px;
-  width: 90%;
-  margin: 0 auto;
-}
-body .container .header {
-  margin-top: 20px;
-  display: flex;
-}
 body .container .header img {
   height: 50px;
   width: 50px;
@@ -57,6 +50,57 @@ body .container .header .nav-ul li button {
 }
 body .container .header .nav-ul li button:hover {
   color: #ececec;
+}
+
+body .container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+body .container .header {
+  margin-top: 24px;
+  display: flex;
+  margin-bottom: 148px;
+}
+body .main h1 {
+  text-align: center;
+  margin-bottom: 120px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+body .main h1 span {
+  font-weight: 700;
+  font-weight: bold;
+}
+body .main img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 55%;
+  height: 500px;
+  width: 500px;
+}
+body .main svg {
+  margin-top: -320px;
+}
+body .main .about {
+  width: 100%;
+  height: 500px;
+  background: #2c2c2c;
+}
+body .main .about h2 {
+  margin-top: -35px;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+body .main .about p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2rem;
+  padding: 1.5rem;
+}
+body .footer {
+  height: 5000px;
 }
 
 /*# sourceMappingURL=styles.css.map */
