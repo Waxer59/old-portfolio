@@ -1,15 +1,41 @@
 body {
   background: #1c1c1c;
+  overflow: overlay;
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 16px;
+  overflow-y: scroll;
+  scrollbar-color: #5c5c5c;
+  scrollbar-width: thin;
 }
 
 * {
   box-sizing: border-box;
   font-family: "Manrope", sans-serif, Arial, Helvetica;
   color: #858585;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5c5c5c;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6c6c6c;
 }
 
 .container .header img {

@@ -2,14 +2,44 @@
 
 body {
   background: $black;
+  overflow: overlay;
 }
 
-html{
-    font-size: 16px;
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  //* SCROLLBAR
+  overflow-y: scroll;
+  scrollbar-color: #5c5c5c;
+  scrollbar-width: thin;
 }
 
 * {
   box-sizing: border-box;
   font-family: "Manrope", sans-serif, Arial, Helvetica;
   color: $gray;
+}
+
+//* SCROLLBAR
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5c5c5c;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6c6c6c;
 }
