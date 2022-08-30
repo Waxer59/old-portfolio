@@ -1,0 +1,15 @@
+.footer {
+  margin-top: 150px;
+  padding: 25px;
+  background: $secondary-black;
+  .links-list {
+    display: flex;
+    justify-content: space-around;
+    li {
+      list-style: none;
+      i {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

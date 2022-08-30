@@ -1,0 +1,18 @@
+.main {
+  .contact {
+    margin-top: 150px;
+    text-align: center;
+    a {
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      background: $secondary-black;
+      font-size: 1.3rem;
+      text-decoration: none;
+      text-align: center;
+    }
+    a:active {
+      box-shadow: none;
+    }
+  }
+}

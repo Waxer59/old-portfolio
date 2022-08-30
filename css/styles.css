@@ -6,7 +6,6 @@ body {
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-y: scroll;
   scrollbar-color: #5c5c5c;
   scrollbar-width: thin;
 }
@@ -78,24 +77,6 @@ html {
   color: #ececec;
 }
 
-.main .about {
-  width: 100%;
-  height: 500px;
-  background: #2c2c2c;
-}
-.main .about h2 {
-  margin-top: -35px;
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
-}
-.main .about p {
-  font-size: 1.3rem;
-  text-align: center;
-  line-height: 2rem;
-  padding: 1.5rem;
-}
-
 .main h1 {
   text-align: center;
   margin-bottom: 120px;
@@ -141,6 +122,57 @@ html {
   margin-right: 15px;
 }
 
+.main .about {
+  width: 100%;
+  height: 500px;
+  background: #2c2c2c;
+}
+.main .about h2 {
+  margin-top: -35px;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.main .about p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2rem;
+  padding: 1.5rem;
+}
+
+.main .contact {
+  margin-top: 150px;
+  text-align: center;
+}
+.main .contact a {
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background: #2c2c2c;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: center;
+}
+.main .contact a:active {
+  box-shadow: none;
+}
+
+.footer {
+  margin-top: 150px;
+  padding: 25px;
+  background: #2c2c2c;
+}
+.footer .links-list {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .links-list li {
+  list-style: none;
+}
+.footer .links-list li i {
+  font-size: 2.5rem;
+}
+
 body .container {
   max-width: 1440px;
   width: 90%;
@@ -150,9 +182,6 @@ body .container .header {
   margin-top: 24px;
   display: flex;
   margin-bottom: 148px;
-}
-body .footer {
-  height: 5000px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,10 @@
 @import "generals";
 @import "./partials/header";
-@import "./partials/about";
 @import "./partials/main";
 @import "./partials/skillset";
+@import "./partials/about";
+@import "./partials/contact";
+@import "./partials/footer";
 
 body {
   .container {
@@ -14,10 +16,5 @@ body {
       display: flex;
       margin-bottom: 148px;
     }
-  }
-
-  
-  .footer {
-    height: 5000px;
   }
 }
