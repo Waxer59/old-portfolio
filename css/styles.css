@@ -1,0 +1,62 @@
+body {
+  background: #1c1c1c;
+  font-size: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif, Arial, Helvetica;
+  color: #858585;
+}
+
+body .container {
+  border: 1px solid red;
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+body .container .header {
+  margin-top: 20px;
+  display: flex;
+}
+body .container .header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+body .container .header .toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5rem;
+}
+body .container .header .toggler i {
+  transition: all 0.2s ease-in-out;
+}
+body .container .header .toggler:hover i {
+  color: #ececec;
+}
+body .container .header .nav-ul {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container .header .nav-ul li {
+  font-size: 1.5rem;
+  list-style: none;
+  margin-left: 5px;
+}
+body .container .header .nav-ul li button {
+  font-weight: 300;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+body .container .header .nav-ul li button:hover {
+  color: #ececec;
+}
+
+/*# sourceMappingURL=styles.css.map */

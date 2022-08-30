@@ -1,0 +1,12 @@
+@import "colors";
+
+body {
+  background: $black;
+  font-size: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif, Arial, Helvetica;
+  color: $gray;
+}
