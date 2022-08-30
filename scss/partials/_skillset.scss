@@ -1,0 +1,29 @@
+.main {
+  .skillset {
+    h2 {
+      font-size: 3rem;
+      font-weight: 400;
+      text-align: center;
+    }
+    .skillset-list {
+      li {
+        margin-top: 50px;
+        list-style: none;
+        h3 {
+          border-bottom: 1px solid $secondary-black;
+          padding: 15px;
+          font-weight: 300;
+          font-size: 1.5rem;
+        }
+        .languages {
+          display: flex;
+          svg {
+            height: 100px;
+            margin: 0;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}

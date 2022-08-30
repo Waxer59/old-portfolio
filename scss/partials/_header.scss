@@ -1,47 +1,45 @@
-body{
-    .container {
-        .header {
-          img {
-            height: 50px;
-            width: 50px;
-            border-radius: 50%;
-          }
-          .toggler {
-            background: none;
-            border: none;
-            cursor: pointer;
-            outline: none;
-            font-size: 1.5rem;
-            i {
-              transition: all 0.2s ease-in-out;
-            }
-          }
-          .toggler:hover {
-            i {
-              color: $white;
-            }
-          }
-          .nav-ul {
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            li {
-              font-size: 1.5rem;
-              list-style: none;
-              margin-left: 5px;
-              button {
-                font-weight: 300;
-                background: none;
-                border: none;
-                cursor: pointer;
-                outline: none;
-                transition: all 0.2s ease-in-out;
-              }
-              button:hover {
-                color: $white;
-              }
-            }
-          }
+.container {
+  .header {
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .toggler {
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      font-size: 1.5rem;
+      i {
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    .toggler:hover {
+      i {
+        color: $white;
+      }
+    }
+    .nav-ul {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        font-size: 1.5rem;
+        list-style: none;
+        margin-left: 10px;
+        button {
+          font-weight: 300;
+          background: none;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          transition: all 0.2s ease-in-out;
+        }
+        button:hover {
+          color: $white;
         }
       }
+    }
+  }
 }

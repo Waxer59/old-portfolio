@@ -12,35 +12,35 @@ html {
   color: #858585;
 }
 
-body .container .header img {
+.container .header img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
-body .container .header .toggler {
+.container .header .toggler {
   background: none;
   border: none;
   cursor: pointer;
   outline: none;
   font-size: 1.5rem;
 }
-body .container .header .toggler i {
+.container .header .toggler i {
   transition: all 0.2s ease-in-out;
 }
-body .container .header .toggler:hover i {
+.container .header .toggler:hover i {
   color: #ececec;
 }
-body .container .header .nav-ul {
+.container .header .nav-ul {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
-body .container .header .nav-ul li {
+.container .header .nav-ul li {
   font-size: 1.5rem;
   list-style: none;
-  margin-left: 5px;
+  margin-left: 10px;
 }
-body .container .header .nav-ul li button {
+.container .header .nav-ul li button {
   font-weight: 300;
   background: none;
   border: none;
@@ -48,8 +48,71 @@ body .container .header .nav-ul li button {
   outline: none;
   transition: all 0.2s ease-in-out;
 }
-body .container .header .nav-ul li button:hover {
+.container .header .nav-ul li button:hover {
   color: #ececec;
+}
+
+.main .about {
+  width: 100%;
+  height: 500px;
+  background: #2c2c2c;
+}
+.main .about h2 {
+  margin-top: -35px;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.main .about p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2rem;
+  padding: 1.5rem;
+}
+
+.main h1 {
+  text-align: center;
+  margin-bottom: 120px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.main h1 span {
+  font-weight: 700;
+  font-weight: bold;
+}
+.main img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 55%;
+  height: 500px;
+  width: 500px;
+}
+.main svg {
+  margin-top: -320px;
+}
+
+.main .skillset h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.main .skillset .skillset-list li {
+  margin-top: 50px;
+  list-style: none;
+}
+.main .skillset .skillset-list li h3 {
+  border-bottom: 1px solid #2c2c2c;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.main .skillset .skillset-list li .languages {
+  display: flex;
+}
+.main .skillset .skillset-list li .languages svg {
+  height: 100px;
+  margin: 0;
+  margin-right: 15px;
 }
 
 body .container {
@@ -61,43 +124,6 @@ body .container .header {
   margin-top: 24px;
   display: flex;
   margin-bottom: 148px;
-}
-body .main h1 {
-  text-align: center;
-  margin-bottom: 120px;
-  font-size: 2rem;
-  font-weight: 300;
-}
-body .main h1 span {
-  font-weight: 700;
-  font-weight: bold;
-}
-body .main img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 55%;
-  height: 500px;
-  width: 500px;
-}
-body .main svg {
-  margin-top: -320px;
-}
-body .main .about {
-  width: 100%;
-  height: 500px;
-  background: #2c2c2c;
-}
-body .main .about h2 {
-  margin-top: -35px;
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
-}
-body .main .about p {
-  font-size: 1.3rem;
-  text-align: center;
-  line-height: 2rem;
-  padding: 1.5rem;
 }
 body .footer {
   height: 5000px;

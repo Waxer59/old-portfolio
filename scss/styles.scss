@@ -1,5 +1,8 @@
 @import "generals";
 @import "./partials/header";
+@import "./partials/about";
+@import "./partials/main";
+@import "./partials/skillset";
 
 body {
   .container {
@@ -12,45 +15,8 @@ body {
       margin-bottom: 148px;
     }
   }
-  .main {
-    h1 {
-      text-align: center;
-      margin-bottom: 120px;
-      font-size: 2rem;
-      font-weight: 300;
-      span {
-        font-weight: 700;
-        font-weight: bold;
-      }
-    }
-    img {
-      display: block;
-      margin: 0 auto;
-      border-radius: 55%;
-      height: 500px;
-      width: 500px;
-    }
-    svg {
-      margin-top: -320px;
-    }
-    .about {
-      width: 100%;
-      height: 500px;
-      background: $secondary-black;
-      h2 {
-        margin-top: -35px;
-        font-size: 3rem;
-        font-weight: 400;
-        text-align: center;
-      }
-      p {
-        font-size: 1.3rem;
-        text-align: center;
-        line-height: 2rem;
-        padding: 1.5rem;
-      }
-    }
-  }
+
+  
   .footer {
     height: 5000px;
   }
