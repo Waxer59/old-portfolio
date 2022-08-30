@@ -11,5 +11,10 @@
         font-size: 2.5rem;
       }
     }
+    li:hover{
+      i{
+        color: $white;
+      }
+    }
   }
 }
