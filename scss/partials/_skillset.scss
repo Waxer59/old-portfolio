@@ -17,6 +17,7 @@
         }
         .languages {
           display: flex;
+          flex-wrap: wrap;
           svg {
             height: 100px;
             margin: 0;
