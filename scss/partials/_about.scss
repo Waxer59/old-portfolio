@@ -2,8 +2,9 @@
   .about {
     margin-top: 10px;
     width: 100%;
-    height: 500px;
+    height: auto;
     background: $secondary-black;
+    padding-bottom: 50px;
     h2 {
       margin-top: -30px;
       font-size: 3rem;
@@ -16,7 +17,6 @@
       text-align: center;
       line-height: 2rem;
       padding: 1.5rem;
-      height: 400px;
     }
   }
 }
