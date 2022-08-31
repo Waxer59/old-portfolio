@@ -7,7 +7,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: clamp(5px, 1.5vw, 16px); 
 
   //* SCROLLBAR
   scrollbar-color: #5c5c5c;

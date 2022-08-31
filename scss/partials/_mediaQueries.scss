@@ -1,0 +1,11 @@
+@media (max-width: 400px) {
+  .header {
+    .nav-ul {
+      text-align: center;
+      flex-flow: column;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

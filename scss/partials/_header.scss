@@ -1,27 +1,24 @@
 .container {
   .header {
-    img {
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-    }
-    .toggler {
-      background: none;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      font-size: 1.5rem;
-      i {
-        transition: all 0.2s ease-in-out;
+    .toggler-container{      
+      .toggler {
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-size: 1.5rem;
+        i {
+          transition: all 0.2s ease-in-out;
+        }
       }
-    }
-    .toggler:hover {
-      i {
-        // color: $white;
-        color: #2c2c2c;
+      .toggler:hover {
+        i {
+          color: #2c2c2c;
+        }
       }
     }
     .nav-ul {
+      padding: 0;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
