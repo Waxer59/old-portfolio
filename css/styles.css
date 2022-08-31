@@ -47,9 +47,6 @@ html {
 .container .header .toggler-container .toggler i {
   transition: all 0.2s ease-in-out;
 }
-.container .header .toggler-container .toggler:hover i {
-  color: #2c2c2c;
-}
 .container .header .nav-ul {
   padding: 0;
   margin: 0 auto;
