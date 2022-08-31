@@ -12,6 +12,24 @@
 @media (max-width: 700px) {
   .main {
     .about {
+      height: 400px;
     }
   }
 }
+@media (max-width: 500px) {
+  .main {
+    .about {
+      height:300px;
+    }
+  }
+}
+@media (max-width: 300px) {
+  .main {
+    .about {
+      h2{
+        margin-top: -25px;
+      }
+    }
+  }
+}
+
