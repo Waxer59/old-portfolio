@@ -9,12 +9,8 @@
     li {
       list-style: none;
       i {
+        transition: all 0.2s ease-in-out;
         font-size: 2.5rem;
-      }
-    }
-    li:hover{
-      i{
-        color: $white;
       }
     }
   }

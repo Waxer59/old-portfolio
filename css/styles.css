@@ -16,6 +16,20 @@ html {
   color: #858585;
 }
 
+.bright:hover {
+  color: #2c2c2c;
+}
+.bright:hover i {
+  color: #2c2c2c;
+}
+
+.dark:hover {
+  color: #ececec;
+}
+.dark:hover i {
+  color: #ececec;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -65,18 +79,6 @@ html {
   cursor: pointer;
   outline: none;
   transition: all 0.2s ease-in-out;
-}
-.container .header .bright:hover {
-  color: #2c2c2c;
-}
-.container .header .bright:hover i {
-  color: #2c2c2c;
-}
-.container .header .dark:hover {
-  color: #ececec;
-}
-.container .header .dark:hover i {
-  color: #ececec;
 }
 .container .header .hide {
   display: none;
@@ -181,10 +183,8 @@ html {
   list-style: none;
 }
 .footer .links-list li i {
+  transition: all 0.2s ease-in-out;
   font-size: 2.5rem;
-}
-.footer .links-list li:hover i {
-  color: #ececec;
 }
 
 @media (max-width: 400px) {
