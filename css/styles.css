@@ -51,6 +51,16 @@ html {
   background: #6c6c6c;
 }
 
+.container .header {
+  margin-top: 24px;
+  display: flex;
+  margin-bottom: 148px;
+}
+.container .header h2 {
+  font-weight: 400;
+  margin: 0;
+  font-style: 1rem;
+}
 .container .header .toggler-container .toggler {
   background: none;
   border: none;
@@ -65,7 +75,7 @@ html {
   padding: 0;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .container .header .nav-ul li {
   font-size: 1.5rem;
@@ -205,11 +215,6 @@ body .container {
   max-width: 1440px;
   width: 90%;
   margin: 0 auto;
-}
-body .container .header {
-  margin-top: 24px;
-  display: flex;
-  margin-bottom: 148px;
 }
 
 /*# sourceMappingURL=styles.css.map */

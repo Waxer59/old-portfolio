@@ -1,6 +1,14 @@
 .container {
   .header {
-    .toggler-container{      
+    margin-top: 24px;
+    display: flex;
+    margin-bottom: 148px;
+    h2 {
+      font-weight: 400;
+      margin: 0;
+      font-style: 1rem;
+    }
+    .toggler-container {
       .toggler {
         background: none;
         border: none;
@@ -16,7 +24,7 @@
       padding: 0;
       margin: 0 auto;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       li {
         font-size: 1.5rem;
         list-style: none;
