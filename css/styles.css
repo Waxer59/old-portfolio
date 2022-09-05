@@ -5,14 +5,14 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-size: clamp(5px, 1.5vw, 16px);
+  font-size: clamp(12px, 1.5vw, 16px);
   scrollbar-color: #5c5c5c;
   scrollbar-width: thin;
 }
 
 * {
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif, Arial, Helvetica;
+  font-family: sans-serif, Arial, Helvetica;
   color: #858585;
 }
 
@@ -147,6 +147,9 @@ html {
   height: auto;
   background: #2c2c2c;
   padding-bottom: 50px;
+}
+.main .about strong {
+  font-weight: 700;
 }
 .main .about h2 {
   margin-top: -30px;
