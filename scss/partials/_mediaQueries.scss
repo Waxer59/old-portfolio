@@ -19,3 +19,15 @@
   }
 }
 
+@media (max-width: 800px) {
+  .main {
+    .proyects{
+      .proyects-links{
+        li{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+

@@ -215,19 +215,24 @@ html {
     margin-top: -25px;
   }
 }
+@media (max-width: 800px) {
+  .main .proyects .proyects-links li {
+    width: 100%;
+  }
+}
 .proyects h2 {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
   margin-bottom: 80px;
 }
-.proyects ul {
+.proyects .proyects-links {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.proyects ul li {
+.proyects .proyects-links li {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-flow: column;
@@ -237,7 +242,7 @@ html {
   border-radius: 25px;
   margin-bottom: 25px;
 }
-.proyects ul li h3 {
+.proyects .proyects-links li h3 {
   border-top: 1px solid #a3a3a3;
   padding-top: 20px;
   padding-bottom: 0;
@@ -246,11 +251,11 @@ html {
   font-weight: 600;
   margin: 0;
 }
-.proyects ul li p {
+.proyects .proyects-links li p {
   font-size: 1rem;
   text-align: center;
 }
-.proyects ul li img {
+.proyects .proyects-links li img {
   display: block;
   margin: 0 auto;
   height: 100%;
@@ -259,20 +264,20 @@ html {
   opacity: 0.8;
   transition: all 0.2s ease;
 }
-.proyects ul li img:hover {
+.proyects .proyects-links li img:hover {
   opacity: 1;
 }
-.proyects ul li .proyectsLinks {
+.proyects .proyects-links li .proyectsLinks {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
 }
-.proyects ul li .proyectsLinks li {
+.proyects .proyects-links li .proyectsLinks li {
   width: auto;
   padding: 0;
   display: inline;
 }
-.proyects ul li .proyectsLinks li a i {
+.proyects .proyects-links li .proyectsLinks li a i {
   transition: all 0.2s ease-in-out;
   font-size: 2.5rem;
 }
