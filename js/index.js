@@ -1,23 +1,28 @@
 // References
+
+//* Nav
 const aboutBtn = document.querySelector("#about-btn");
 const skillsetBtn = document.querySelector("#skillset-btn");
 const contactBtn = document.querySelector("#contact-btn");
-const togglerBtn = document.querySelector('#toggler')
-const brigthClass = document.querySelectorAll('.bright');
-const darkClass = document.querySelectorAll('.dark');
+const togglerBtn = document.querySelector("#toggler");
+const proyectsBtn = document.querySelector("#proyects-btn");
 
+//* Toggler
+const darkElements = document.querySelectorAll(".dark");
+const darkBgElements = document.querySelectorAll(".dark-bg");
+
+//* Divs
 const about = document.querySelector("#about");
 const skillset = document.querySelector("#skillset");
 const contact = document.querySelector("#contact");
-
 const dark = document.querySelector("#dark");
 const bright = document.querySelector("#bright");
 const contactMail = document.querySelector("#contact-mail");
 const footer = document.querySelector("footer");
 const wave = document.querySelector("#wave");
+const proyects = document.querySelector("#proyects");
 
-
-// Listener
+// Listeners
 aboutBtn.addEventListener("click", function (e) {
   window.scrollTo({
     top: about.offsetTop,
@@ -39,34 +44,45 @@ contactBtn.addEventListener("click", function (e) {
   });
 });
 
+proyectsBtn.addEventListener("click", function (e) {
+  window.scrollTo({
+    top: proyects.offsetTop,
+    behavior: "smooth"
+  });
+});
+
 togglerBtn.addEventListener("click", () => {
   dark.classList.toggle("hide");
   bright.classList.toggle("hide");
-  if (dark.classList.contains("hide")) {
+
+  //! BRIGHT MODE
+  if (!dark.classList.contains("hide")) {
     //* BG
-    document.body.style.background = "#f2f2f2";
-    footer.style.background = "#e8e8e8";
-    wave.style.fill = "#e8e8e8";
-    about.style.background = "#e8e8e8";
-    contactMail.style.background = "#e8e8e8";
+    document.body.style.background = "#1c1c1c";
+    darkBgElements.forEach((el) => {
+      el.classList.add("dark-bg");
+      el.classList.remove("bright-bg");
+    });
     
     //* Hover
-    darkClass.forEach((el)=>{
-      el.classList.add('bright');
-      el.classList.remove('dark');
-    })
+    darkElements.forEach((el) => {
+      el.classList.add("dark");
+      el.classList.remove("bright");
+    });
     return;
   }
+  //! DARK MODE
   //* BG
-  document.body.style.background = "#1c1c1c";
-  contactMail.style.background = "#2c2c2c";
-  footer.style.background = "#2c2c2c";
-  wave.style.fill = "#2c2c2c";
-  about.style.background = "#2c2c2c";
+  document.body.style.background = "#f2f2f2";
+  darkBgElements.forEach((el) => {
+    el.classList.add("bright-bg");
+    el.classList.remove("dark-bg");
+  });
 
   //* Hover
-  brigthClass.forEach((el)=>{
-    el.classList.add('dark');
-    el.classList.remove('bright');
-  })
+  darkElements.forEach((el) => {
+    el.classList.add("bright");
+    el.classList.remove("dark");
+  });
+  
 });

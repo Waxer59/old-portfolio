@@ -30,6 +30,16 @@ html {
   color: #ececec;
 }
 
+.dark-bg {
+  background: #2c2c2c;
+  fill: #2c2c2c;
+}
+
+.bright-bg {
+  background: #e8e8e8;
+  fill: #e8e8e8;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -146,7 +156,6 @@ html {
   margin-top: 10px;
   width: 100%;
   height: auto;
-  background: #2c2c2c;
   padding-bottom: 50px;
 }
 .main .about strong {
@@ -174,7 +183,6 @@ html {
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  background: #2c2c2c;
   font-size: 1.5rem;
   text-decoration: none;
   text-align: center;
@@ -186,7 +194,6 @@ html {
 .footer {
   margin-top: 150px;
   padding: 25px;
-  background: #2c2c2c;
 }
 .footer .links-list {
   padding: 0;
@@ -201,9 +208,10 @@ html {
   font-size: 2.5rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header .nav-ul {
     text-align: center;
+    justify-content: center;
     flex-flow: column;
   }
   .header .nav-ul li {
@@ -217,7 +225,7 @@ html {
 }
 @media (max-width: 800px) {
   .main .proyects .proyects-links li {
-    width: 100%;
+    width: 70%;
     justify-content: center;
   }
 }
@@ -225,7 +233,7 @@ html {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 80px;
+  margin: 40px 0;
 }
 .proyects .proyects-links {
   padding: 0;
@@ -239,7 +247,6 @@ html {
   display: flex;
   flex-flow: column;
   padding: 25px;
-  background: #2c2c2c;
   width: 35%;
   border-radius: 25px;
   margin-bottom: 25px;
@@ -278,6 +285,7 @@ html {
   width: auto;
   padding: 0;
   display: inline;
+  box-shadow: none;
 }
 .proyects .proyects-links li .proyectsLinks li a i {
   transition: all 0.2s ease-in-out;

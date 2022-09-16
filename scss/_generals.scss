@@ -35,6 +35,16 @@ html {
   }
 }
 
+.dark-bg{
+  background: $secondary-black;
+  fill: $secondary-black;
+}
+
+.bright-bg{
+  background: $dark-white;
+  fill: $dark-white
+}
+
 //* SCROLLBAR
 
 /* width */

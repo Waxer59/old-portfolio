@@ -1,7 +1,8 @@
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header {
     .nav-ul {
       text-align: center;
+      justify-content: center;
       flex-flow: column;
       li {
         margin-bottom: 5px;
@@ -24,7 +25,7 @@
     .proyects{
       .proyects-links{
         li{
-          width: 100%;
+          width: 70%;
           justify-content: center;
         }
       }
