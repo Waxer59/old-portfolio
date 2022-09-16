@@ -78,7 +78,7 @@ html {
   flex-wrap: nowrap;
 }
 .container .header .nav-ul li {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   list-style: none;
   margin-left: 10px;
 }
@@ -105,7 +105,7 @@ html {
   font-weight: 700;
   font-weight: bold;
 }
-.main img {
+.main .mainPhoto {
   display: block;
   margin: 0 auto;
   border-radius: 55%;
@@ -215,6 +215,68 @@ html {
     margin-top: -25px;
   }
 }
+.proyects h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.proyects ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.proyects ul li {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column;
+  padding: 25px;
+  background: #2c2c2c;
+  width: 35%;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.proyects ul li h3 {
+  border-top: 1px solid #a3a3a3;
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+.proyects ul li p {
+  font-size: 1rem;
+  text-align: center;
+}
+.proyects ul li img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+.proyects ul li img:hover {
+  opacity: 1;
+}
+.proyects ul li .proyectsLinks {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.proyects ul li .proyectsLinks li {
+  width: auto;
+  padding: 0;
+  display: inline;
+}
+.proyects ul li .proyectsLinks li a i {
+  transition: all 0.2s ease-in-out;
+  font-size: 2.5rem;
+}
+
 body .container {
   max-width: 1440px;
   width: 90%;

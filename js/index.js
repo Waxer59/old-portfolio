@@ -2,10 +2,9 @@
 const aboutBtn = document.querySelector("#about-btn");
 const skillsetBtn = document.querySelector("#skillset-btn");
 const contactBtn = document.querySelector("#contact-btn");
-const togglerBtn = document.querySelector("#toggler");
-const githubBtn = document.querySelector("#github-btn");
-const linkedinBtn = document.querySelector("#linkedin-btn");
-const twitterBtn = document.querySelector("#twitter-btn");
+const togglerBtn = document.querySelector('#toggler')
+const brigthClass = document.querySelectorAll('.bright');
+const darkClass = document.querySelectorAll('.dark');
 
 const about = document.querySelector("#about");
 const skillset = document.querySelector("#skillset");
@@ -43,54 +42,31 @@ contactBtn.addEventListener("click", function (e) {
 togglerBtn.addEventListener("click", () => {
   dark.classList.toggle("hide");
   bright.classList.toggle("hide");
-  if (!dark.classList.contains("hide")) {
+  if (dark.classList.contains("hide")) {
     //* BG
-    document.body.style.background = "#1c1c1c";
-    contactMail.style.background = "#2c2c2c";
-    footer.style.background = "#2c2c2c";
-    wave.style.fill = "#2c2c2c";
-    about.style.background = "#2c2c2c";
-
+    document.body.style.background = "#f2f2f2";
+    footer.style.background = "#e8e8e8";
+    wave.style.fill = "#e8e8e8";
+    about.style.background = "#e8e8e8";
+    contactMail.style.background = "#e8e8e8";
+    
     //* Hover
-
-    aboutBtn.classList.add("dark");
-    skillsetBtn.classList.add("dark");
-    contactBtn.classList.add("dark");
-    togglerBtn.classList.add("dark");
-    githubBtn.classList.add("dark");
-    linkedinBtn.classList.add("dark");
-    twitterBtn.classList.add("dark");
-
-    aboutBtn.classList.remove("bright");
-    skillsetBtn.classList.remove("bright");
-    contactBtn.classList.remove("bright");
-    togglerBtn.classList.remove("bright");
-    githubBtn.classList.remove("bright");
-    linkedinBtn.classList.remove("bright");
-    twitterBtn.classList.remove("bright");
+    darkClass.forEach((el)=>{
+      el.classList.add('bright');
+      el.classList.remove('dark');
+    })
     return;
   }
   //* BG
-  document.body.style.background = "#f2f2f2";
-  footer.style.background = "#e8e8e8";
-  wave.style.fill = "#e8e8e8";
-  about.style.background = "#e8e8e8";
-  contactMail.style.background = "#e8e8e8";
+  document.body.style.background = "#1c1c1c";
+  contactMail.style.background = "#2c2c2c";
+  footer.style.background = "#2c2c2c";
+  wave.style.fill = "#2c2c2c";
+  about.style.background = "#2c2c2c";
 
   //* Hover
-  aboutBtn.classList.add("bright");
-  skillsetBtn.classList.add("bright");
-  contactBtn.classList.add("bright");
-  togglerBtn.classList.add("bright");
-  githubBtn.classList.add("bright");
-  linkedinBtn.classList.add("bright");
-  twitterBtn.classList.add("bright");
-
-  aboutBtn.classList.remove("dark");
-  skillsetBtn.classList.remove("dark");
-  contactBtn.classList.remove("dark");
-  togglerBtn.classList.remove("dark");
-  githubBtn.classList.remove("dark");
-  linkedinBtn.classList.remove("dark");
-  twitterBtn.classList.remove("dark");
+  brigthClass.forEach((el)=>{
+    el.classList.add('dark');
+    el.classList.remove('bright');
+  })
 });
