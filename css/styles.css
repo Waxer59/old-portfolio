@@ -218,6 +218,7 @@ html {
 @media (max-width: 800px) {
   .main .proyects .proyects-links li {
     width: 100%;
+    justify-content: center;
   }
 }
 .proyects h2 {
@@ -227,6 +228,7 @@ html {
   margin-bottom: 80px;
 }
 .proyects .proyects-links {
+  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
