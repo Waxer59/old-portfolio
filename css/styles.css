@@ -73,6 +73,7 @@ html {
   font-style: 1rem;
 }
 .container .header .toggler-container .toggler {
+  padding: 0;
   background: none;
   border: none;
   cursor: pointer;
@@ -208,8 +209,7 @@ html {
 }
 
 @media (max-width: 500px) {
-  .header .menu .nav #barsMenuChkbx,
-.header .menu .nav .hamburger-lines {
+  .header .menu .nav {
     display: block;
   }
   .header .nav-ul {
@@ -308,11 +308,8 @@ html {
   font-size: 1.5rem;
 }
 
-#barsMenuChkbx, .hamburger-lines {
-  display: none;
-}
-
 .nav {
+  display: none;
   margin-right: 25px;
 }
 .nav .menu-items {
