@@ -1,0 +1,60 @@
+.checkbox {
+  position: absolute;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+}
+
+.hamburger-lines {
+  font-size: 1.5rem;
+}
+
+#barsMenuChkbx, .hamburger-lines{
+    display: none;
+}
+
+.nav {
+  margin-right: 25px;
+  .menu-items {
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+    height: 100vh;
+    position: absolute;
+    transform: translateY(-25%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -30px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    li {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      list-style: none;
+      button {
+        padding: 0;
+        font-weight: 300;
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateY(0);
+}
+
+.hide {
+  display: none;
+}

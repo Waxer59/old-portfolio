@@ -65,6 +65,7 @@ html {
   margin-top: 24px;
   display: flex;
   margin-bottom: 148px;
+  justify-content: space-between;
 }
 .container .header h2 {
   font-weight: 400;
@@ -93,7 +94,6 @@ html {
   margin-left: 10px;
 }
 .container .header .nav-ul li button {
-  padding: 5px;
   font-weight: 300;
   background: none;
   border: none;
@@ -118,7 +118,6 @@ html {
 .main .mainPhoto {
   display: block;
   margin: 0 auto;
-  border-radius: 55%;
   height: auto;
   width: 35%;
 }
@@ -209,13 +208,12 @@ html {
 }
 
 @media (max-width: 500px) {
-  .header .nav-ul {
-    text-align: center;
-    justify-content: center;
-    flex-flow: column;
+  .header .menu .nav #barsMenuChkbx,
+.header .menu .nav .hamburger-lines {
+    display: block;
   }
-  .header .nav-ul li {
-    margin-bottom: 5px;
+  .header .nav-ul {
+    display: none !important;
   }
 }
 @media (max-width: 300px) {
@@ -290,6 +288,67 @@ html {
 .proyects .proyects-links li .proyectsLinks li a i {
   transition: all 0.2s ease-in-out;
   font-size: 2.5rem;
+}
+
+.checkbox {
+  position: absolute;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+}
+
+.hamburger-lines {
+  font-size: 1.5rem;
+}
+
+#barsMenuChkbx, .hamburger-lines {
+  display: none;
+}
+
+.nav {
+  margin-right: 25px;
+}
+.nav .menu-items {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+  height: 100vh;
+  position: absolute;
+  transform: translateY(-25%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -30px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+.nav .menu-items li {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  list-style: none;
+}
+.nav .menu-items li button {
+  padding: 0;
+  font-weight: 300;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type=checkbox]:checked ~ .menu-items {
+  transform: translateY(0);
+}
+
+.hide {
+  display: none;
 }
 
 body .container {

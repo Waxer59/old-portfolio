@@ -1,11 +1,15 @@
 // References
 
 //* Nav
-const aboutBtn = document.querySelector("#about-btn");
-const skillsetBtn = document.querySelector("#skillset-btn");
-const contactBtn = document.querySelector("#contact-btn");
+const aboutBtn = document.querySelectorAll("#about-btn");
+const skillsetBtn = document.querySelectorAll("#skillset-btn");
+const contactBtn = document.querySelectorAll("#contact-btn");
+const proyectsBtn = document.querySelectorAll("#proyects-btn");
 const togglerBtn = document.querySelector("#toggler");
-const proyectsBtn = document.querySelector("#proyects-btn");
+
+const barsMenuChkbx = document.querySelector("#barsMenuChkbx");
+const closeBarsMenu = document.querySelector("#closeBarsMenu");
+const barsMenu = document.querySelector("#barsMenu");
 
 //* Toggler
 const darkElements = document.querySelectorAll(".dark");
@@ -23,31 +27,39 @@ const wave = document.querySelector("#wave");
 const proyects = document.querySelector("#proyects");
 
 // Listeners
-aboutBtn.addEventListener("click", function (e) {
-  window.scrollTo({
-    top: about.offsetTop,
-    behavior: "smooth"
+aboutBtn.forEach((el) => {
+  el.addEventListener("click", function (e) {
+    window.scrollTo({
+      top: about.offsetTop,
+      behavior: "smooth"
+    });
   });
 });
 
-skillsetBtn.addEventListener("click", function (e) {
-  window.scrollTo({
-    top: skillset.offsetTop,
-    behavior: "smooth"
+skillsetBtn.forEach((el) => {
+  el.addEventListener("click", function (e) {
+    window.scrollTo({
+      top: skillset.offsetTop,
+      behavior: "smooth"
+    });
   });
 });
 
-contactBtn.addEventListener("click", function (e) {
-  window.scrollTo({
-    top: contact.offsetTop,
-    behavior: "smooth"
+contactBtn.forEach((el) => {
+  el.addEventListener("click", function (e) {
+    window.scrollTo({
+      top: contact.offsetTop,
+      behavior: "smooth"
+    });
   });
 });
 
-proyectsBtn.addEventListener("click", function (e) {
-  window.scrollTo({
-    top: proyects.offsetTop,
-    behavior: "smooth"
+proyectsBtn.forEach((el) => {
+  el.addEventListener("click", function (e) {
+    window.scrollTo({
+      top: proyects.offsetTop,
+      behavior: "smooth"
+    });
   });
 });
 
@@ -63,7 +75,7 @@ togglerBtn.addEventListener("click", () => {
       el.classList.add("dark-bg");
       el.classList.remove("bright-bg");
     });
-    
+
     //* Hover
     darkElements.forEach((el) => {
       el.classList.add("dark");
@@ -84,5 +96,9 @@ togglerBtn.addEventListener("click", () => {
     el.classList.add("bright");
     el.classList.remove("dark");
   });
-  
+});
+
+barsMenuChkbx.addEventListener("click", () => {
+  closeBarsMenu.classList.toggle("hide");
+  barsMenu.classList.toggle("hide");
 });

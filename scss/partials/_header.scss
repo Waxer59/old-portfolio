@@ -3,6 +3,7 @@
     margin-top: 24px;
     display: flex;
     margin-bottom: 148px;
+    justify-content: space-between;
     h2 {
       font-weight: 400;
       margin: 0;
@@ -30,7 +31,6 @@
         list-style: none;
         margin-left: 10px;
         button {
-          padding: 5px;
           font-weight: 300;
           background: none;
           border: none;

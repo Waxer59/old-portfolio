@@ -1,19 +1,22 @@
 @media (max-width: 500px) {
   .header {
-    .nav-ul {
-      text-align: center;
-      justify-content: center;
-      flex-flow: column;
-      li {
-        margin-bottom: 5px;
+    .menu {
+      .nav {
+        #barsMenuChkbx,
+        .hamburger-lines {
+          display: block;
+        }
       }
+    }
+    .nav-ul {
+      display: none !important;
     }
   }
 }
 @media (max-width: 300px) {
   .main {
     .about {
-      h2{
+      h2 {
         margin-top: -25px;
       }
     }
@@ -22,9 +25,9 @@
 
 @media (max-width: 800px) {
   .main {
-    .proyects{
-      .proyects-links{
-        li{
+    .proyects {
+      .proyects-links {
+        li {
           width: 70%;
           justify-content: center;
         }
@@ -32,4 +35,3 @@
     }
   }
 }
-
