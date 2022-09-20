@@ -221,10 +221,10 @@ html {
     margin-top: -25px;
   }
 }
-@media (max-width: 250px) {
+@media (max-width: 400px) {
   .backToTop {
-    right: 5px !important;
-    padding: 0.5rem !important;
+    right: 10px !important;
+    padding: 0.75rem !important;
   }
 }
 @media (max-width: 800px) {
@@ -359,7 +359,7 @@ input[type=checkbox]:checked ~ .menu-items {
   cursor: pointer;
   position: fixed;
   bottom: 20px;
-  right: 25px;
+  right: 15px;
   z-index: 99;
   border-radius: 100%;
   color: white;
