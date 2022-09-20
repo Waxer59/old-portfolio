@@ -20,6 +20,13 @@
   }
 }
 
+@media (max-width: 250px) {
+  .backToTop {
+    right: 5px !important;
+    padding: .5rem !important;
+  }
+}
+
 @media (max-width: 800px) {
   .main {
     .proyects {
