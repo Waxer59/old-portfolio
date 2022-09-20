@@ -14,6 +14,7 @@
 
 .hamburger-lines {
   font-size: 1.5rem;
+  width: 16px;
 }
 
 .nav {
@@ -23,13 +24,12 @@
     margin-top: 15px;
     padding: 0;
     list-style: none;
-    height: 100vh;
     position: absolute;
-    transform: translateY(-25%);
+    opacity: 0;
     display: flex;
     flex-direction: column;
     margin-left: -30px;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     text-align: center;
     li {
       margin-bottom: 10px;
@@ -49,7 +49,7 @@
 }
 
 input[type="checkbox"]:checked ~ .menu-items {
-  transform: translateY(0);
+  opacity: 1;
 }
 
 .hide {
