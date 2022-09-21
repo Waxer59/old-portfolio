@@ -369,10 +369,10 @@ input[type=checkbox]:checked ~ .menu-items {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .backToTop i {
-  padding-left: 5.5px;
-  padding-right: 5.5px;
-  padding-top: 2px;
-  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
 }
 
 body .container {
