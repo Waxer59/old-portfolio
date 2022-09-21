@@ -220,6 +220,10 @@ html {
   .main .about h2 {
     margin-top: -25px;
   }
+
+  .backToTop {
+    display: none !important;
+  }
 }
 @media (max-width: 400px) {
   .backToTop {
