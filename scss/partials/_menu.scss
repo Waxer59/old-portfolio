@@ -25,8 +25,7 @@
     padding: 0;
     list-style: none;
     position: absolute;
-    opacity: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-left: -25px;
     transition: all 0.5s ease-in-out;
@@ -49,7 +48,7 @@
 }
 
 input[type="checkbox"]:checked ~ .menu-items {
-  opacity: 1;
+  display: block;
 }
 
 .hide {
