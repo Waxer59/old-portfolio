@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 
 body {
   background: $black;
@@ -7,7 +7,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-size: clamp(12px, 1.5vw, 16px); 
+  font-size: clamp(12px, 1.5vw, 16px);
 
   //* SCROLLBAR
   scrollbar-color: #5c5c5c;
@@ -35,14 +35,14 @@ html {
   }
 }
 
-.dark-bg{
+.dark-bg {
   background: $secondary-black;
   fill: $secondary-black;
 }
 
-.bright-bg{
+.bright-bg {
   background: $dark-white;
-  fill: $dark-white
+  fill: $dark-white;
 }
 
 //* SCROLLBAR

@@ -1,0 +1,33 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Esta es mi pagina web personal desplegada en la plataforma [Netlify](https://www.netlify.com/) para verla desplegada pincha [aqui](https://wadev.netlify.app/)!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waxer59/MyPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waxer59/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/Waxer59/MyPortfolio#readme",
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint . --fix",
+    "*.{js,html,md,scss}": "prettier --write"
+  }
+}
