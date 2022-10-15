@@ -156,6 +156,7 @@ html {
   margin-top: 10px;
   width: 100%;
   height: auto;
+  padding: 0 4rem;
   padding-bottom: 50px;
 }
 .main .about strong {
