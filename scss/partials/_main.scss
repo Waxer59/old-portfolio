@@ -13,7 +13,7 @@
     display: block;
     margin: 0 auto;
     height: auto;
-    width: 35%;
+    width: clamp(75px, 50%, 600px);
   }
   svg {
     margin-top: -280px;
