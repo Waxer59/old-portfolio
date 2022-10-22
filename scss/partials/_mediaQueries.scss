@@ -37,8 +37,31 @@
     .proyects {
       .proyects-links {
         li {
-          width: 70%;
+          width: 70% !important;
           justify-content: center;
+        }
+      }
+      .proyectsLinks {
+        li {
+          width: auto !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    .proyects {
+      .proyects-links {
+        li {
+          width: 35%;
+          justify-content: center !important;
+        }
+      }
+      .proyectsLinks {
+        li {
+          width: auto !important;
         }
       }
     }

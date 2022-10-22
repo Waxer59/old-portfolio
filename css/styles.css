@@ -234,8 +234,20 @@ html {
 }
 @media (max-width: 800px) {
   .main .proyects .proyects-links li {
-    width: 70%;
+    width: 70% !important;
     justify-content: center;
+  }
+  .main .proyects .proyectsLinks li {
+    width: auto !important;
+  }
+}
+@media (max-width: 1000px) {
+  .main .proyects .proyects-links li {
+    width: 35%;
+    justify-content: center !important;
+  }
+  .main .proyects .proyectsLinks li {
+    width: auto !important;
   }
 }
 .proyects h2 {
@@ -256,7 +268,7 @@ html {
   display: flex;
   flex-flow: column;
   padding: 25px;
-  width: 35%;
+  width: 30%;
   border-radius: 25px;
   margin-bottom: 25px;
 }
@@ -276,7 +288,7 @@ html {
 .proyects .proyects-links li img {
   display: block;
   margin: 0 auto;
-  height: 100%;
+  height: 200px;
   width: 100%;
   padding: 10px;
   opacity: 0.8;
