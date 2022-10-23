@@ -130,6 +130,8 @@ html {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 .main .skillset .skillset-list li {
   margin-top: 50px;
@@ -140,6 +142,8 @@ html {
   padding: 15px;
   font-weight: 300;
   font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 .main .skillset .skillset-list li .languages {
   display: flex;
@@ -260,7 +264,8 @@ html {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
-  margin: 40px 0;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 .proyects .proyects-links {
   padding: 0;
@@ -268,6 +273,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 0;
 }
 .proyects .proyects-links li {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
