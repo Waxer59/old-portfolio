@@ -237,6 +237,9 @@ html {
     width: 70% !important;
     justify-content: center;
   }
+  .main .proyects .proyects-links li img {
+    height: 100% !important;
+  }
   .main .proyects .proyectsLinks li {
     width: auto !important;
   }
@@ -245,6 +248,9 @@ html {
   .main .proyects .proyects-links li {
     width: 35%;
     justify-content: center !important;
+  }
+  .main .proyects .proyects-links li img {
+    height: 150px;
   }
   .main .proyects .proyectsLinks li {
     width: auto !important;
