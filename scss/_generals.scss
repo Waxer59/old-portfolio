@@ -1,7 +1,21 @@
-@import 'colors';
+html.dark-theme:root {
+  --principal-color: #1c1c1c;
+  --secondary-color: #2c2c2c;
+  --gray: #858585;
+  --hover: #cecece;
+  --border: #2c2c2c;
+}
+
+html.light-theme:root {
+  --principal-color: #ececec;
+  --secondary-color: #e8e8e8;
+  --gray: #a3a3a3;
+  --hover: #2c2c2c;
+  --border: #b1b1b1;
+}
 
 body {
-  background: $black;
+  background: var(--principal-color);
   overflow: overlay;
 }
 
@@ -14,35 +28,23 @@ html {
   scrollbar-width: thin;
 }
 
+button:hover {
+  color: var(--hover);
+  i {
+    color: var(--hover);
+  }
+}
+
+a:hover {
+  i {
+    color: var(--hover);
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: sans-serif, Arial, Helvetica;
-  color: $gray;
-}
-
-//* Dark mode
-
-.bright:hover {
-  color: #2c2c2c;
-  i {
-    color: #2c2c2c;
-  }
-}
-.dark:hover {
-  color: $white;
-  i {
-    color: $white;
-  }
-}
-
-.dark-bg {
-  background: $secondary-black;
-  fill: $secondary-black;
-}
-
-.bright-bg {
-  background: $dark-white;
-  fill: $dark-white;
+  color: var(--gray);
 }
 
 //* SCROLLBAR

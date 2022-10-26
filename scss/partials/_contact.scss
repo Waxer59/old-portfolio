@@ -9,9 +9,11 @@
       font-size: 1.5rem;
       text-decoration: none;
       text-align: center;
+      background-color: var(--secondary-color);
+      transition: all 0.3s ease-in-out;
     }
-    a:active {
-      box-shadow: none;
+    a:hover {
+      color: var(--hover);
     }
   }
 }

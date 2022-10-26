@@ -1,5 +1,21 @@
+html.dark-theme:root {
+  --principal-color: #1c1c1c;
+  --secondary-color: #2c2c2c;
+  --gray: #858585;
+  --hover: #cecece;
+  --border: #2c2c2c;
+}
+
+html.light-theme:root {
+  --principal-color: #ececec;
+  --secondary-color: #e8e8e8;
+  --gray: #a3a3a3;
+  --hover: #2c2c2c;
+  --border: #b1b1b1;
+}
+
 body {
-  background: #1c1c1c;
+  background: var(--principal-color);
   overflow: overlay;
 }
 
@@ -10,34 +26,21 @@ html {
   scrollbar-width: thin;
 }
 
+button:hover {
+  color: var(--hover);
+}
+button:hover i {
+  color: var(--hover);
+}
+
+a:hover i {
+  color: var(--hover);
+}
+
 * {
   box-sizing: border-box;
   font-family: sans-serif, Arial, Helvetica;
-  color: #a3a3a3;
-}
-
-.bright:hover {
-  color: #2c2c2c;
-}
-.bright:hover i {
-  color: #2c2c2c;
-}
-
-.dark:hover {
-  color: #ececec;
-}
-.dark:hover i {
-  color: #ececec;
-}
-
-.dark-bg {
-  background: #2c2c2c;
-  fill: #2c2c2c;
-}
-
-.bright-bg {
-  background: #e8e8e8;
-  fill: #e8e8e8;
+  color: var(--gray);
 }
 
 /* width */
@@ -124,6 +127,7 @@ html {
 }
 .main svg {
   margin-top: -280px;
+  fill: var(--secondary-color);
 }
 
 .main .skillset h2 {
@@ -138,7 +142,7 @@ html {
   list-style: none;
 }
 .main .skillset .skillset-list li h3 {
-  border-bottom: 1px solid #2c2c2c;
+  border-bottom: 1px solid var(--border);
   padding: 15px;
   font-weight: 300;
   font-size: 1.5rem;
@@ -162,6 +166,7 @@ html {
   height: auto;
   padding: 0 4rem;
   padding-bottom: 50px;
+  background: var(--secondary-color);
 }
 .main .about strong {
   font-weight: 700;
@@ -191,14 +196,17 @@ html {
   font-size: 1.5rem;
   text-decoration: none;
   text-align: center;
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
 }
-.main .contact a:active {
-  box-shadow: none;
+.main .contact a:hover {
+  color: var(--hover);
 }
 
 .footer {
   margin-top: 150px;
   padding: 25px;
+  background: var(--secondary-color);
 }
 .footer .links-list {
   padding: 0;
@@ -207,6 +215,7 @@ html {
 }
 .footer .links-list li {
   list-style: none;
+  background: var(--secondary-color);
 }
 .footer .links-list li i {
   transition: all 0.2s ease-in-out;
@@ -283,9 +292,13 @@ html {
   width: 30%;
   border-radius: 25px;
   margin-bottom: 25px;
+  background: var(--secondary-color);
+}
+.proyects .proyects-links li a {
+  color: var(--secondary-color);
 }
 .proyects .proyects-links li h3 {
-  border-top: 1px solid #a3a3a3;
+  border-top: 1px solid var(--gray);
   padding-top: 20px;
   padding-bottom: 0;
   font-size: 1.5rem;
@@ -373,6 +386,9 @@ html {
   outline: none;
   transition: all 0.2s ease-in-out;
 }
+.nav .menu-items li button i {
+  color: var(--secondary-color);
+}
 
 input[type=checkbox]:checked ~ .menu-items {
   display: block;
@@ -395,8 +411,10 @@ input[type=checkbox]:checked ~ .menu-items {
   font-size: 1.5rem;
   padding: 1rem;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background: var(--secondary-color);
 }
 .backToTop i {
+  transition: all 0.3s ease-in-out;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 2.5px;

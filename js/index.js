@@ -12,16 +12,27 @@ const closeBarsMenu = document.querySelector('#closeBarsMenu');
 const barsMenu = document.querySelector('#barsMenu');
 
 //* Toggler
-const darkElements = document.querySelectorAll('.dark');
-const darkBgElements = document.querySelectorAll('.dark-bg');
+const dark = document.querySelector('#dark');
+const bright = document.querySelector('#bright');
 
 //* Divs
 const about = document.querySelector('#about');
 const skillset = document.querySelector('#skillset');
 const contact = document.querySelector('#contact');
-const dark = document.querySelector('#dark');
-const bright = document.querySelector('#bright');
 const proyects = document.querySelector('#proyects');
+
+//* Set the theme
+if (localStorage.getItem('theme') === 'light') {
+  dark.classList.toggle('hide');
+  bright.classList.toggle('hide');
+  document.querySelector('html').classList.remove('dark-theme');
+  document.querySelector('html').classList.add('light-theme');
+}
+
+if (localStorage.getItem('theme') === 'dark') {
+  document.querySelector('html').classList.add('dark-theme');
+  document.querySelector('html').classList.remove('light-theme');
+}
 
 // Listeners
 aboutBtn.forEach((el) => {
@@ -63,36 +74,19 @@ proyectsBtn.forEach((el) => {
 togglerBtn.addEventListener('click', () => {
   dark.classList.toggle('hide');
   bright.classList.toggle('hide');
-
-  //! BRIGHT MODE
-  if (!dark.classList.contains('hide')) {
-    //* BG
-    document.body.style.background = '#1c1c1c';
-    darkBgElements.forEach((el) => {
-      el.classList.add('dark-bg');
-      el.classList.remove('bright-bg');
-    });
-
-    //* Hover
-    darkElements.forEach((el) => {
-      el.classList.add('dark');
-      el.classList.remove('bright');
-    });
+  if (document.querySelector('html').classList.contains('dark-theme')) {
+    document.querySelector('html').classList.remove('dark-theme');
+    document.querySelector('html').classList.add('light-theme');
+    if (typeof Storage !== 'undefined') {
+      localStorage.setItem('theme', 'light');
+    }
     return;
   }
-  //! DARK MODE
-  //* BG
-  document.body.style.background = '#f2f2f2';
-  darkBgElements.forEach((el) => {
-    el.classList.add('bright-bg');
-    el.classList.remove('dark-bg');
-  });
-
-  //* Hover
-  darkElements.forEach((el) => {
-    el.classList.add('bright');
-    el.classList.remove('dark');
-  });
+  document.querySelector('html').classList.add('dark-theme');
+  document.querySelector('html').classList.remove('light-theme');
+  if (typeof Storage !== 'undefined') {
+    localStorage.setItem('theme', 'dark');
+  }
 });
 
 barsMenuChkbx.addEventListener('click', () => {

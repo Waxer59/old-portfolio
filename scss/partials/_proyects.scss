@@ -21,8 +21,12 @@
       width: 30%;
       border-radius: 25px;
       margin-bottom: 25px;
+      background: var(--secondary-color);
+      a {
+        color: var(--secondary-color);
+      }
       h3 {
-        border-top: 1px solid $gray;
+        border-top: 1px solid var(--gray);
         padding-top: 20px;
         padding-bottom: 0;
         font-size: 1.5rem;

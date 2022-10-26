@@ -1,12 +1,14 @@
 .footer {
   margin-top: 150px;
   padding: 25px;
+  background: var(--secondary-color);
   .links-list {
     padding: 0;
     display: flex;
     justify-content: space-around;
     li {
       list-style: none;
+      background: var(--secondary-color);
       i {
         transition: all 0.2s ease-in-out;
         font-size: 2.5rem;
