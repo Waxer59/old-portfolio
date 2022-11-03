@@ -126,7 +126,7 @@ a:hover i {
   width: clamp(75px, 50%, 600px);
 }
 .main svg {
-  margin-top: -280px;
+  margin-top: -13%;
   fill: var(--secondary-color);
 }
 
@@ -234,7 +234,6 @@ a:hover i {
   .main .about h2 {
     margin-top: -25px;
   }
-
   .backToTop {
     display: none !important;
   }
