@@ -183,6 +183,8 @@ a:hover i {
   text-align: center;
   line-height: 2rem;
   padding: 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .main .contact {
