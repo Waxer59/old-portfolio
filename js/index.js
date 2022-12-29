@@ -37,6 +37,7 @@ if (localStorage.getItem('theme') === 'dark') {
 // Listeners
 aboutBtn.forEach((el) => {
   el.addEventListener('click', () => {
+    document.location.href = `${document.location.origin}#about`;
     window.scrollTo({
       top: about.offsetTop,
       behavior: 'smooth',
@@ -46,6 +47,7 @@ aboutBtn.forEach((el) => {
 
 skillsetBtn.forEach((el) => {
   el.addEventListener('click', () => {
+    document.location.href = `${document.location.origin}#skillset`;
     window.scrollTo({
       top: skillset.offsetTop,
       behavior: 'smooth',
@@ -55,6 +57,7 @@ skillsetBtn.forEach((el) => {
 
 contactBtn.forEach((el) => {
   el.addEventListener('click', () => {
+    document.location.href = `${document.location.origin}#contact`;
     window.scrollTo({
       top: contact.offsetTop,
       behavior: 'smooth',
@@ -64,6 +67,7 @@ contactBtn.forEach((el) => {
 
 proyectsBtn.forEach((el) => {
   el.addEventListener('click', () => {
+    document.location.href = `${document.location.origin}#proyects`;
     window.scrollTo({
       top: proyects.offsetTop,
       behavior: 'smooth',
@@ -98,25 +102,18 @@ barsMenuChkbx.addEventListener('click', () => {
 
 const button = document.querySelector('#backToTop-btn');
 
-const displayButton = () => {
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-      button.style.display = 'block';
-    } else {
-      button.style.display = 'none';
-    }
-  });
-};
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+});
 
-const scrollToTop = () => {
-  button.addEventListener('click', () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
+button.addEventListener('click', () => {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
   });
-};
-
-displayButton();
-scrollToTop();
+});
