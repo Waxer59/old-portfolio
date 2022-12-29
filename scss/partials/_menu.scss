@@ -15,6 +15,9 @@
 .hamburger-lines {
   font-size: 1.5rem;
   width: 16px;
+  i {
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .nav {
@@ -52,6 +55,12 @@
 
 input[type='checkbox']:checked ~ .menu-items {
   display: block;
+}
+
+input[type='checkbox']:hover ~ .hamburger-lines {
+  i {
+    color: var(--hover);
+  }
 }
 
 .hide {
