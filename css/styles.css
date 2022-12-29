@@ -7,7 +7,7 @@ html.dark-theme:root {
 }
 
 html.light-theme:root {
-  --principal-color: #ececec;
+  --principal-color: #d9d9d9;
   --secondary-color: #e8e8e8;
   --gray: #a3a3a3;
   --hover: #2c2c2c;
@@ -124,9 +124,13 @@ a:hover i {
   margin: 0 auto;
   height: auto;
   width: clamp(75px, 50%, 600px);
+  animation: float 6s ease-in-out infinite;
+  border-radius: 50%;
+  border: 5px solid var(--border);
+  background-color: var(--principal-color);
 }
 .main svg {
-  margin-top: -13%;
+  margin-top: -15%;
   fill: var(--secondary-color);
 }
 
@@ -422,6 +426,20 @@ input[type=checkbox]:checked ~ .menu-items {
   padding-bottom: 2.5px;
 }
 
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
 body .container {
   max-width: 1440px;
   width: 90%;

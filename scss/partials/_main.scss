@@ -14,9 +14,13 @@
     margin: 0 auto;
     height: auto;
     width: clamp(75px, 50%, 600px);
+    animation: float 6s ease-in-out infinite;
+    border-radius: 50%;
+    border: 5px solid var(--border);
+    background-color: var(--principal-color);
   }
   svg {
-    margin-top: -13%;
+    margin-top: -15%;
     fill: var(--secondary-color);
   }
 }
