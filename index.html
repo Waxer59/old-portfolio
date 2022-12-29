@@ -33,9 +33,9 @@
 
   <body>
     <!-- Back to top button -->
-    <a id="backToTop-btn" class="backToTop">
+    <button id="backToTop-btn" class="backToTop">
       <i class="fa-solid fa-chevron-up"></i>
-    </a>
+    </button>
 
     <div class="container">
       <header class="header">
@@ -58,7 +58,11 @@
 
         <div class="menu">
           <nav class="nav">
-            <input class="checkbox" type="checkbox" id="barsMenuChkbx" />
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="barsMenuChkbx"
+              aria-label="Hamburger menu" />
             <div class="hamburger-lines">
               <i class="fa-solid fa-bars" id="barsMenu"></i>
               <i class="fa-solid fa-xmark hide" id="closeBarsMenu"></i>
@@ -94,18 +98,6 @@
     </div>
     <main class="main">
       <h1>Hi, i'm <span>Wadev</span></h1>
-
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill-opacity="1" id="wave"
-        d="M0,32L40,32C80,32,160,32,240,42.7C320,53,400,75,480,106.7C560,139,640,181,720,186.7C800,192,880,160,960,122.7C1040,85,1120,43,1200,37.3C1280,32,1360,64,1400,80L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-      </path>
-      <g class="parallax">
-        <use xlink:href="#wave" x="48" y="0" fill="var(--secondary-color)" />
-        <use xlink:href="#wave" x="48" y="3" fill="var(--secondary-color)" />
-        <use xlink:href="#wave" x="48" y="5" fill="var(--secondary-color)" />
-        <use xlink:href="#wave" x="48" y="7" fill="var(--secondary-color)" />
-      </g>
-    </svg> -->
       <img
         src="./images/flork.png"
         width="500"
@@ -666,7 +658,10 @@
               </p>
               <ul class="proyectsLinks">
                 <li>
-                  <a href="https://github.com/Waxer59/tasker" target="_blank"
+                  <a
+                    href="https://github.com/Waxer59/tasker"
+                    aria-label="Tasker github proyect"
+                    target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
                 </li>
@@ -678,12 +673,18 @@
               <p>DinamicJs is a real time javascript playground!!</p>
               <ul class="proyectsLinks">
                 <li>
-                  <a href="https://github.com/Waxer59/DinamicJs" target="_blank"
+                  <a
+                    href="https://github.com/Waxer59/DinamicJs"
+                    aria-label="DinamicJs github proyect"
+                    target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="https://dinamicjs.netlify.app/" target="_blank"
+                  <a
+                    href="https://dinamicjs.netlify.app/"
+                    aria-label="DinamicJs page"
+                    target="_blank"
                     ><i class="fa-solid fa-link"></i
                   ></a>
                 </li>
@@ -698,7 +699,10 @@
               </p>
               <ul class="proyectsLinks">
                 <li>
-                  <a href="https://github.com/Waxer59/QrCreator" target="_blank"
+                  <a
+                    href="https://github.com/Waxer59/QrCreator"
+                    aria-label="QrCreator github proyect"
+                    target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
                 </li>
@@ -715,6 +719,7 @@
                 <li>
                   <a
                     href="https://github.com/Waxer59/UrlShortener"
+                    aria-label="UrlShortener github proyect"
                     target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
@@ -732,6 +737,7 @@
                 <li>
                   <a
                     href="https://github.com/Waxer59/ImageUploader"
+                    aria-label="ImageUploader github proyect"
                     target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
@@ -749,6 +755,7 @@
                 <li>
                   <a
                     href="https://github.com/Waxer59/PhotoDisplay"
+                    aria-label="PhotoDisplay github proyect"
                     target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
@@ -768,12 +775,16 @@
                 <li>
                   <a
                     href="https://github.com/Waxer59/DinamicJs-Desktop"
+                    aria-label="DinamicJs github proyect"
                     target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="https://get-dinamicjs.netlify.app" target="_blank"
+                  <a
+                    href="https://get-dinamicjs.netlify.app"
+                    target="_blank"
+                    aria-label="DinamicJs installation page"
                     ><i class="fa-solid fa-link"></i
                   ></a>
                 </li>
@@ -784,7 +795,12 @@
       </div>
 
       <div class="contact" id="contact" data-aos="zoom-in-up">
-        <a href="mailto:hnboyano@gmail.com" id="contact-mail">Contact me!</a>
+        <a
+          href="mailto:hnboyano@gmail.com"
+          id="contact-mail"
+          aria-label="Wadev email"
+          >Contact me!</a
+        >
       </div>
     </main>
 
@@ -795,12 +811,16 @@
             href="https://github.com/Waxer59"
             id="github-btn"
             target="_blank"
-            aria-label="github"
+            aria-label="Wadev github profile"
             ><i class="fa-brands fa-github"></i
           ></a>
         </li>
         <li>
-          <a href="#" id="linkedin-btn" target="_blank" aria-label="linkedin"
+          <a
+            href="#"
+            id="linkedin-btn"
+            target="_blank"
+            aria-label="Wadev linkedin profile"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </li>
@@ -809,7 +829,7 @@
             href="https://twitter.com/Waxer59"
             id="twitter-btn"
             target="_blank"
-            aria-label="twitter"
+            aria-label="Wadev twitter profile"
             ><i class="fa-brands fa-twitter"></i
           ></a>
         </li>
