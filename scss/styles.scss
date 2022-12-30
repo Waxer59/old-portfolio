@@ -12,6 +12,7 @@
 @import './partials/animations';
 
 body {
+  transition: all 0.3s ease-out;
   .container {
     max-width: 1440px;
     width: 90%;
