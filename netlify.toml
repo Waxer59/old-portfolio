@@ -3,6 +3,7 @@
   to = "/index.html"
   status = 200
   
+[[redirects]]
   from = "/sw.js"
   to = "/sw.js"
   status = 200
