@@ -448,6 +448,9 @@ input[type=checkbox]:hover ~ .hamburger-lines i {
     transform: translatey(0px);
   }
 }
+body {
+  transition: all 0.3s ease-out;
+}
 body .container {
   max-width: 1440px;
   width: 90%;
