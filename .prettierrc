@@ -3,5 +3,6 @@
   "tabWidth": 2,
   "bracketSpacing": true,
   "bracketSameLine": true,
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "trailingComma": "all"
 }

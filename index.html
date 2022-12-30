@@ -42,10 +42,15 @@
     <script src="./js/index.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="public/sw.js" defer></script>
   </head>
 
   <body>
+    <!-- PWA -->
+    <script defer>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
     <!-- Back to top button -->
     <button id="backToTop-btn" class="backToTop">
       <i class="fa-solid fa-chevron-up"></i>

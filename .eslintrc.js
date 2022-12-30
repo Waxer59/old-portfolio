@@ -11,5 +11,7 @@ module.exports = {
   },
   rules: {
     'linebreak-style': 0,
+    'no-restricted-globals': 0,
+    'no-undef': 0,
   },
 };
