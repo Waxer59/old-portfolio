@@ -1,10 +1,10 @@
 // References
 
 //* Nav
-const aboutBtn = document.querySelectorAll('#about-btn');
-const skillsetBtn = document.querySelectorAll('#skillset-btn');
-const contactBtn = document.querySelectorAll('#contact-btn');
-const proyectsBtn = document.querySelectorAll('#proyects-btn');
+const aboutBtn = document.querySelectorAll('.about-btn');
+const skillsetBtn = document.querySelectorAll('.skillset-btn');
+const contactBtn = document.querySelectorAll('.contact-btn');
+const proyectsBtn = document.querySelectorAll('.proyects-btn');
 const togglerBtn = document.querySelector('#toggler');
 
 const barsMenuChkbx = document.querySelector('#barsMenuChkbx');
