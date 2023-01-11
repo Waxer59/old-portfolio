@@ -28,11 +28,15 @@ html {
   scrollbar-width: thin;
 }
 
-button:hover {
+button:hover, a:hover {
   color: var(--hover);
   i {
     color: var(--hover);
   }
+}
+
+a{
+  text-decoration: none;
 }
 
 a:hover {

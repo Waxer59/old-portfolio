@@ -26,11 +26,15 @@ html {
   scrollbar-width: thin;
 }
 
-button:hover {
+button:hover, a:hover {
   color: var(--hover);
 }
-button:hover i {
+button:hover i, a:hover i {
   color: var(--hover);
+}
+
+a {
+  text-decoration: none;
 }
 
 a:hover i {
