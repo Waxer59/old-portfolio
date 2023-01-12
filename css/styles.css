@@ -35,6 +35,7 @@ button:hover i, a:hover i {
 
 a {
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 a:hover i {
