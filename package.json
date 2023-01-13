@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "scss:watch": "sass --watch scss:css"
+    "scss:watch": "sass --watch scss:public/css"
   },
   "repository": {
     "type": "git",
