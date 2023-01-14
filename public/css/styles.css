@@ -327,11 +327,7 @@ a:hover i {
   height: 200px;
   width: 100%;
   padding: 10px;
-  opacity: 0.8;
   transition: all 0.2s ease;
-}
-.proyects .proyects-links li img:hover {
-  opacity: 1;
 }
 .proyects .proyects-links li .proyectsLinks {
   display: flex;

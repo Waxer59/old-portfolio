@@ -1,5 +1,10 @@
 // References
 
+//* PWA
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+
 //* Nav
 const aboutBtn = document.querySelectorAll('.about-btn');
 const skillsetBtn = document.querySelectorAll('.skillset-btn');
