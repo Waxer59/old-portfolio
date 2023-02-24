@@ -1,0 +1,7 @@
+export { BackToTop } from './backToTop/BackToTop'
+export { Contact } from './contact/Contact'
+export { Proyects } from './proyects/Proyects'
+export { Skillset } from './skillset/Skillset'
+export { About } from './about/About'
+export { Footer } from './footer/Footer'
+export { Navbar } from './navbar/Navbar'

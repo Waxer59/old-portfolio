@@ -1,0 +1,68 @@
+.proyects h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.proyects .proyects-links {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 0;
+}
+.proyects .proyects-links li {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column;
+  padding: 25px;
+  width: 30%;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  background: var(--secondary-color);
+}
+.proyects .proyects-links li a {
+  color: var(--secondary-color);
+}
+.proyects .proyects-links li h3 {
+  border-top: 1px solid var(--gray);
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+.proyects .proyects-links li p {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.proyects .proyects-links li img {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+.proyects .proyects-links li .proyectsLinks {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.proyects .proyects-links li .proyectsLinks li {
+  width: auto;
+  padding: 0;
+  display: inline;
+  box-shadow: none;
+}
+.proyects .proyects-links li .proyectsLinks li a i {
+  transition: all 0.2s ease-in-out;
+  font-size: 2.5rem;
+}
+.proyects-icon {
+  font-size: 2.5rem;
+}
