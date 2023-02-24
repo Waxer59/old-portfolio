@@ -77,7 +77,7 @@ export const PROYECTS_DATA: ProyectInterface[] = [
     img: 'discordBot.webp',
     desc: 'A discord bot which can do many things!',
     links: {
-      repo: 'https://github.com/Waxer59/DinamicJs-Desktop',
+      repo: 'https://github.com/Waxer59/discordjs-bot',
       url: undefined
     }
   },
