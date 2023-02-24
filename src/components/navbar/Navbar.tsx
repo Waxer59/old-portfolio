@@ -1,8 +1,24 @@
 import './Navbar.css'
 import { FaMoon, FaSun, FaBars } from 'react-icons/fa/index'
 import { AiOutlineClose } from 'react-icons/ai/index'
+import { useEffect } from 'react'
 
 export const Navbar = (): JSX.Element => {
+  useEffect(() => {
+    const scrollToHashElement = (): never | undefined => {
+      const { hash } = window.location
+      const elementToScroll = document.getElementById(hash?.replace('#', ''))
+      if (elementToScroll === null) {
+        return
+      }
+      window.scrollTo({
+        top: elementToScroll.offsetTop,
+        behavior: 'smooth'
+      })
+    }
+    scrollToHashElement()
+  }, [])
+
   return (
     <div className="container">
       <header className="header">
