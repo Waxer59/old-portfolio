@@ -17,7 +17,7 @@ export const ProyectItem = ({
       <h3>{name}</h3>
       <p>{desc}</p>
       <ul className="proyectsLinks">
-        {links.repo !== null && (
+        {links.repo !== undefined && (
           <li key={links.repo}>
             <a
               href={links.repo}
@@ -29,7 +29,7 @@ export const ProyectItem = ({
             </a>
           </li>
         )}
-        {links?.url !== null && (
+        {links.url !== undefined && (
           <li key={links.url}>
             <a
               href={links.url}
