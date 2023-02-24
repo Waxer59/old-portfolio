@@ -89,14 +89,5 @@ export const PROYECTS_DATA: ProyectInterface[] = [
       repo: 'https://github.com/Waxer59/Wadev-Blog',
       url: 'https://blog.wadev.dev/'
     }
-  },
-  {
-    name: 'This Portfolio',
-    img: 'wadev-porfolio.webp',
-    desc: 'This is my personal portfolio!!',
-    links: {
-      repo: 'https://github.com/Waxer59/MyPortfolio',
-      url: 'https://wadev.dev/'
-    }
   }
 ]

@@ -21,6 +21,7 @@
   width: 30%;
   border-radius: 25px;
   margin-bottom: 25px;
+  justify-content: space-around;
   background: var(--secondary-color);
 }
 .proyects .proyects-links li a {
@@ -36,7 +37,7 @@
   margin: 0;
 }
 .proyects .proyects-links li p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   line-height: 1.5rem;
 }
@@ -47,6 +48,7 @@
   width: 100%;
   padding: 10px;
   transition: all 0.2s ease;
+  object-fit: cover;
 }
 .proyects .proyects-links li .proyectsLinks {
   display: flex;
