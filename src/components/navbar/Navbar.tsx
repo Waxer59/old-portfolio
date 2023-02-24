@@ -13,15 +13,17 @@ export const Navbar = (): JSX.Element => {
   const moonIcon = useRef<HTMLElement>(null)
   const sunIcon = useRef<HTMLElement>(null)
   const { setLocalStorageItem, getLocalStorageItem } = useLocalStorage()
-  const [theme, setTheme] = useState(THEMES.dark)
+  const [theme, setTheme] = useState(
+    getLocalStorageItem(LocalStorageItems.theme) ?? THEMES.dark
+  )
 
   const onThemeTogglerClick = (): void => {
     moonIcon.current?.classList.toggle('hide')
     sunIcon.current?.classList.toggle('hide')
 
-    setTheme((currentTheme) => {
-      return currentTheme === THEMES.dark ? THEMES.light : THEMES.dark
-    })
+    setTheme((currentTheme: any) =>
+      currentTheme === THEMES.dark ? THEMES.light : THEMES.dark
+    )
   }
 
   useEffect(() => {
@@ -45,7 +47,11 @@ export const Navbar = (): JSX.Element => {
       })
     }
     scrollToHashElement()
-    setTheme(getLocalStorageItem(LocalStorageItems.theme))
+
+    if (theme !== THEMES.dark) {
+      moonIcon.current?.classList.toggle('hide')
+      sunIcon.current?.classList.toggle('hide')
+    }
   }, [])
 
   return (
