@@ -21,7 +21,6 @@
   width: 30%;
   border-radius: 25px;
   margin-bottom: 25px;
-  justify-content: space-around;
   background: var(--secondary-color);
 }
 .proyects .proyects-links li a {
@@ -48,12 +47,12 @@
   width: 100%;
   padding: 10px;
   transition: all 0.2s ease;
-  object-fit: cover;
 }
 .proyects .proyects-links li .proyectsLinks {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
+  margin-top: auto;
 }
 .proyects .proyects-links li .proyectsLinks li {
   width: auto;

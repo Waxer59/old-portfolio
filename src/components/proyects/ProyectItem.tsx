@@ -11,6 +11,8 @@ export const ProyectItem = ({
     <li data-aos="zoom-in-up">
       <img
         src={`/images/proyects/${img}`}
+        width="650"
+        height="450"
         alt={`${name} photo`}
         loading="lazy"
       />
