@@ -1,0 +1,26 @@
+.main .about {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  padding: 0 4rem;
+  padding-bottom: 50px;
+  background: var(--secondary-color);
+}
+.main .about strong {
+  font-weight: 700;
+}
+.main .about h2 {
+  margin-top: -30px;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.main .about p {
+  overflow: hidden;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2rem;
+  padding: 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
