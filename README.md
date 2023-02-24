@@ -8,3 +8,4 @@ This is my personal website displayed on the platform [Netlify](https://www.netl
 - [TypeScript](https://www.typescriptlang.org/)
 - [React icons](https://react-icons.github.io/react-icons/)
 - [Astro](https://astro.build/)
+- [Aos](https://michalsnik.github.io/aos/)

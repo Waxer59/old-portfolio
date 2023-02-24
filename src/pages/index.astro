@@ -1,6 +1,7 @@
 ---
 import '../styles/styles.css'
 import '../styles/normalize.css'
+import 'aos/dist/aos.css'
 import {
   Navbar,
   Footer,
@@ -43,7 +44,7 @@ import { WaveSvg } from '../components/Icons'
   </head>
   <body>
     <BackToTop client:only="react" />
-    <Navbar client:load/>
+    <Navbar client:load />
     <main class="main">
       <h1>Hi, i'm <span>Wadev</span></h1>
       <img
@@ -57,9 +58,13 @@ import { WaveSvg } from '../components/Icons'
       <WaveSvg />
       <About />
       <Skillset />
-      <Proyects />
+      <Proyects client:only="react" />
       <Contact />
     </main>
     <Footer />
+    <script>
+      import AOS from 'aos'
+      AOS.init()
+    </script>
   </body>
 </html>
