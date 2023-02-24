@@ -23,6 +23,7 @@ export const ProyectItem = ({
               href={links.repo}
               aria-label={`${name} github proyect`}
               target="_blank"
+              role="link"
               rel="noreferrer">
               <FaGithub className="proyects-icon" />
             </a>
@@ -33,6 +34,7 @@ export const ProyectItem = ({
             <a
               href={links.url}
               aria-label={`${name} proyect page`}
+              role="link"
               target="_blank"
               rel="noreferrer">
               <FaLink className="proyects-icon" />
