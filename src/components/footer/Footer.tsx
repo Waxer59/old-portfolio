@@ -17,9 +17,10 @@ export const Footer = (): JSX.Element => {
         </li>
         <li>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/hugo-boyano-39ba0624a"
             id="linkedin-btn"
             target="_blank"
+            rel="noreferrer"
             aria-label="Wadev linkedin profile">
             <FaLinkedin className="footer-icon" />
           </a>
