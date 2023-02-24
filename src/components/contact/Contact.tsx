@@ -1,6 +1,6 @@
 import './Contact.css'
 
-export const Contact = () => {
+export const Contact = (): JSX.Element => {
   return (
     <div className="contact" id="contact" data-aos="zoom-in-up">
       <a

@@ -19,6 +19,7 @@ module.exports = {
     }
   },
   rules: {
-    '@typescript-eslint/triple-slash-reference': 'off'
+    '@typescript-eslint/triple-slash-reference': 'off',
+    'react/react-in-jsx-scope': 'off'
   }
 }

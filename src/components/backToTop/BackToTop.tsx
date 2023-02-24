@@ -2,10 +2,10 @@ import './BackToTop.css'
 import { FaChevronUp } from 'react-icons/fa/index'
 import { useRef, useEffect } from 'react'
 
-export const BackToTop = () => {
+export const BackToTop = (): JSX.Element => {
   const backToTopBtn = useRef<any>(null)
 
-  const onBackToTopBtnClick = () => {
+  const onBackToTopBtnClick = (): void => {
     window.scroll({
       top: 0,
       left: 0,
@@ -14,7 +14,7 @@ export const BackToTop = () => {
   }
 
   useEffect(() => {
-    const handleScroll = (e: Event) => {
+    const handleScroll = (e: Event): void => {
       if (window.scrollY > 100) {
         backToTopBtn.current.style.display = 'block'
       } else {

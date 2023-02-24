@@ -2,8 +2,7 @@ import './Navbar.css'
 import { FaMoon, FaSun, FaBars } from 'react-icons/fa/index'
 import { AiOutlineClose } from 'react-icons/ai/index'
 
-export const Navbar = () => {
-  const onNavButtonClick = () => {}
+export const Navbar = (): JSX.Element => {
   return (
     <div className="container">
       <header className="header">
@@ -13,42 +12,31 @@ export const Navbar = () => {
 
         <ul className="nav-ul">
           <li>
-            <button
-              className="about-btn"
-              type="button"
-              onClick={onNavButtonClick}>
+            <a className="about-btn" type="button" href="#about">
               About
-            </button>
+            </a>
           </li>
           <li>
-            <button
-              className="skillset-btn"
-              type="button"
-              onClick={onNavButtonClick}>
+            <a className="skillset-btn" type="button" href="#skillset">
               Skillset
-            </button>
+            </a>
           </li>
           <li>
-            <button
-              className="proyects-btn"
-              type="button"
-              onClick={onNavButtonClick}>
+            <a className="proyects-btn" type="button" href="#proyects">
               Proyects
-            </button>
+            </a>
           </li>
           <li>
-            <button
-              className="contact-btn"
-              type="button"
-              onClick={onNavButtonClick}>
+            <a className="contact-btn" type="button" href="#contact">
               Contact
-            </button>
+            </a>
           </li>
           <li>
             <a
               className="blog-btn"
               href="https://blog.wadev.dev/"
-              target="_blank">
+              target="_blank"
+              rel="noreferrer">
               Blog
             </a>
           </li>
@@ -68,34 +56,22 @@ export const Navbar = () => {
             </div>
             <ul className="menu-items">
               <li>
-                <button
-                  className="about-btn"
-                  type="button"
-                  onClick={onNavButtonClick}>
+                <button className="about-btn" type="button">
                   About
                 </button>
               </li>
               <li>
-                <button
-                  className="skillset-btn"
-                  type="button"
-                  onClick={onNavButtonClick}>
+                <button className="skillset-btn" type="button">
                   Skillset
                 </button>
               </li>
               <li>
-                <button
-                  className="proyects-btn"
-                  type="button"
-                  onClick={onNavButtonClick}>
+                <button className="proyects-btn" type="button">
                   Proyects
                 </button>
               </li>
               <li>
-                <button
-                  className="contact-btn"
-                  type="button"
-                  onClick={onNavButtonClick}>
+                <button className="contact-btn" type="button">
                   Contact
                 </button>
               </li>
@@ -104,7 +80,8 @@ export const Navbar = () => {
                   className="blog-btn"
                   href="https://blog.wadev.dev/"
                   target="_blank"
-                  type="button">
+                  type="button"
+                  rel="noreferrer">
                   Blog
                 </a>
               </li>

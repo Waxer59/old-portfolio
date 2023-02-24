@@ -58,7 +58,6 @@ input[type='checkbox']:hover ~ .hamburger-lines i {
 .hide {
   display: none;
 }
-
 .header {
   margin-top: 24px;
   display: flex;
@@ -85,6 +84,7 @@ input[type='checkbox']:hover ~ .hamburger-lines i {
   padding: 0;
   margin: 0 auto;
   display: flex;
+  gap: 10px;
   flex-wrap: nowrap;
 }
 .header .nav-ul li {

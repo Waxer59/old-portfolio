@@ -1,6 +1,6 @@
 import './About.css'
 
-export const About = () => {
+export const About = (): JSX.Element => {
   return (
     <div className="about" id="about">
       <h2>About</h2>

@@ -25,7 +25,7 @@ import {
 } from '../Icons'
 import './Skillset.css'
 
-export const Skillset = () => {
+export const Skillset = (): JSX.Element => {
   return (
     <div className="skillset" id="skillset">
       <div className="container">

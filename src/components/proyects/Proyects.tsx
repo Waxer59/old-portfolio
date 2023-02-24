@@ -2,7 +2,7 @@ import { ProyectItem } from './ProyectItem'
 import './Proyects.css'
 import { PROYECTS_DATA } from './ProyectsData'
 
-export const Proyects = () => {
+export const Proyects = (): JSX.Element => {
   return (
     <div className="container">
       <div className="proyects" id="proyects">

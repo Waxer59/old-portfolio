@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "prepare": "husky install",
-    "lint": "eslint \"{src}/**/*.{ts,tsx}\" --fix"
+    "lint": "eslint --fix --ext .ts,.tsx .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/react": "^2.0.2",
@@ -36,11 +37,11 @@
     "typescript": "*"
   },
   "lint-staged": {
-    "src/*.{ts,tsx,js,jsx}": [
-      "eslint --fix"
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix --ext .ts,.tsx ."
     ],
     "*.{ts,tsx,js,jsx,html,css,md}": [
-      "prettier --write"
+      "prettier --write ."
     ]
   }
 }

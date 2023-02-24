@@ -1,7 +1,7 @@
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa/index'
 import './Footer.css'
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
   return (
     <footer className="footer">
       <ul className="links-list">
@@ -10,7 +10,8 @@ export const Footer = () => {
             href="https://github.com/Waxer59"
             id="github-btn"
             target="_blank"
-            aria-label="Wadev github profile">
+            aria-label="Wadev github profile"
+            rel="noreferrer">
             <FaGithub className="footer-icon" />
           </a>
         </li>
@@ -28,7 +29,8 @@ export const Footer = () => {
             href="https://twitter.com/Waxer59"
             id="twitter-btn"
             target="_blank"
-            aria-label="Wadev twitter profile">
+            aria-label="Wadev twitter profile"
+            rel="noreferrer">
             <FaTwitter className="footer-icon" />
           </a>
         </li>
