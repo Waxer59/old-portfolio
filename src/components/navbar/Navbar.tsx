@@ -12,10 +12,19 @@ const THEMES = {
 export const Navbar = (): JSX.Element => {
   const moonIcon = useRef<HTMLElement>(null)
   const sunIcon = useRef<HTMLElement>(null)
+
+  const barsIcon = useRef<HTMLElement>(null)
+  const xMarkIcon = useRef<HTMLElement>(null)
+
   const { setLocalStorageItem, getLocalStorageItem } = useLocalStorage()
   const [theme, setTheme] = useState(
     getLocalStorageItem(LocalStorageItems.theme) ?? THEMES.dark
   )
+
+  const onInputMenuChange = (): void => {
+    barsIcon.current?.classList.toggle('hide')
+    xMarkIcon.current?.classList.toggle('hide')
+  }
 
   const onThemeTogglerClick = (): void => {
     moonIcon.current?.classList.toggle('hide')
@@ -100,10 +109,15 @@ export const Navbar = (): JSX.Element => {
               type="checkbox"
               id="barsMenuChkbx"
               aria-label="Hamburger menu"
+              onChange={onInputMenuChange}
             />
             <div className="hamburger-lines">
-              <FaBars />
-              <AiOutlineClose className="hide" />
+              <span ref={barsIcon}>
+                <FaBars />
+              </span>
+              <span ref={xMarkIcon} className="hide">
+                <AiOutlineClose />
+              </span>
             </div>
             <ul className="menu-items">
               <li>

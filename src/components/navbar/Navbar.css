@@ -14,7 +14,7 @@
   font-size: 1.5rem;
   width: 16px;
 }
-.hamburger-lines i {
+.hamburger-lines span svg {
   transition: all 0.3s ease-in-out;
 }
 .nav {
@@ -46,14 +46,11 @@
   outline: none;
   transition: all 0.2s ease-in-out;
 }
-.nav .menu-items li button i {
-  color: var(--secondary-color);
-}
 input[type='checkbox']:checked ~ .menu-items {
   display: block;
 }
-input[type='checkbox']:hover ~ .hamburger-lines i {
-  color: var(--hover);
+input[type='checkbox']:hover ~ .hamburger-lines span svg {
+  fill: var(--hover);
 }
 .hide {
   display: none;
