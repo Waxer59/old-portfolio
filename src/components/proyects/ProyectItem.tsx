@@ -14,7 +14,6 @@ export const ProyectItem = ({
         width="650"
         height="450"
         alt={`${name} photo`}
-        loading="lazy"
       />
       <h3>{name}</h3>
       <p>{desc}</p>
