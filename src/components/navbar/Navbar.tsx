@@ -1,9 +1,37 @@
 import './Navbar.css'
 import { FaMoon, FaSun, FaBars } from 'react-icons/fa/index'
 import { AiOutlineClose } from 'react-icons/ai/index'
-import { useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { LocalStorageItems, useLocalStorage } from '../../hooks/useLocalStorage'
+
+const THEMES = {
+  dark: 'dark-theme',
+  light: 'light-theme'
+}
 
 export const Navbar = (): JSX.Element => {
+  const moonIcon = useRef<HTMLElement>(null)
+  const sunIcon = useRef<HTMLElement>(null)
+  const { setLocalStorageItem, getLocalStorageItem } = useLocalStorage()
+  const [theme, setTheme] = useState(THEMES.dark)
+
+  const onThemeTogglerClick = (): void => {
+    moonIcon.current?.classList.toggle('hide')
+    sunIcon.current?.classList.toggle('hide')
+
+    setTheme((currentTheme) => {
+      return currentTheme === THEMES.dark ? THEMES.light : THEMES.dark
+    })
+  }
+
+  useEffect(() => {
+    setLocalStorageItem(LocalStorageItems.theme, theme)
+    document.querySelector('html')?.classList.add(theme)
+    document
+      .querySelector('html')
+      ?.classList.remove(theme === THEMES.dark ? THEMES.light : THEMES.dark)
+  }, [theme])
+
   useEffect(() => {
     const scrollToHashElement = (): never | undefined => {
       const { hash } = window.location
@@ -17,6 +45,7 @@ export const Navbar = (): JSX.Element => {
       })
     }
     scrollToHashElement()
+    setTheme(getLocalStorageItem(LocalStorageItems.theme))
   }, [])
 
   return (
@@ -72,24 +101,24 @@ export const Navbar = (): JSX.Element => {
             </div>
             <ul className="menu-items">
               <li>
-                <button className="about-btn" type="button">
+                <a className="about-btn" type="button" href="#about">
                   About
-                </button>
+                </a>
               </li>
               <li>
-                <button className="skillset-btn" type="button">
+                <a className="skillset-btn" type="button" href="#skillset">
                   Skillset
-                </button>
+                </a>
               </li>
               <li>
-                <button className="proyects-btn" type="button">
+                <a className="proyects-btn" type="button" href="#proyects">
                   Proyects
-                </button>
+                </a>
               </li>
               <li>
-                <button className="contact-btn" type="button">
+                <a className="contact-btn" type="button" href="#contact">
                   Contact
-                </button>
+                </a>
               </li>
               <li>
                 <a
@@ -109,9 +138,14 @@ export const Navbar = (): JSX.Element => {
               id="toggler"
               type="button"
               className="toggler"
-              aria-label="toggle">
-              <FaMoon id="dark" />
-              <FaSun className="hide" id="bright" />
+              aria-label="toggle"
+              onClick={onThemeTogglerClick}>
+              <span ref={moonIcon}>
+                <FaMoon />
+              </span>
+              <span ref={sunIcon} className="hide">
+                <FaSun />
+              </span>
             </button>
           </div>
         </div>
