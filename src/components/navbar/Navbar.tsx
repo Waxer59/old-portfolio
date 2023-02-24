@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from 'react'
 import { LocalStorageItems, useLocalStorage } from '../../hooks/useLocalStorage'
 
 const THEMES = {
-  dark: 'dark-theme',
-  light: 'light-theme'
+  dark: 'dark',
+  light: 'light'
 }
 
 export const Navbar = (): JSX.Element => {
