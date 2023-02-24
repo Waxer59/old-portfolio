@@ -48,7 +48,7 @@ export const PROYECTS_DATA: ProyectInterface[] = [
   {
     name: 'ImageUploader',
     img: 'imageUploader.webp',
-    desc: 'ImageUploader is a website where you can upload /images (PNG, JPG & JPEG) and share them with a link so they can be viewed.',
+    desc: 'ImageUploader is a website where you can upload images (PNG, JPG & JPEG) and share them with a link so they can be viewed.',
     links: {
       repo: 'https://github.com/Waxer59/ImageUploader',
       url: undefined
