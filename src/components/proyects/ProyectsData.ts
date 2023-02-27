@@ -89,5 +89,14 @@ export const PROYECTS_DATA: ProyectInterface[] = [
       repo: 'https://github.com/Waxer59/Wadev-Blog',
       url: 'https://blog.wadev.dev/'
     }
+  },
+  {
+    name: 'Wikat',
+    img: 'wikat.webp',
+    desc: 'Would you like to know more about cats, because if so Wikat is your website, you can learn more about each breed with high quality images of each of the breeds.',
+    links: {
+      repo: 'https://github.com/Waxer59/Wikat',
+      url: undefined
+    }
   }
 ]
