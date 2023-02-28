@@ -102,6 +102,9 @@ a {
   .main .about h2 {
     margin-top: -25px;
   }
+  .contact a {
+    padding: 20px 25px !important;
+  }
   .backToTop {
     display: none !important;
   }
