@@ -21,7 +21,8 @@ import {
   NodeIcon,
   JavaIcon,
   TypeScriptIcon,
-  JavaScriptIcon
+  JavaScriptIcon,
+  RedisIcon
 } from '../Icons'
 import './Skillset.css'
 
@@ -51,6 +52,7 @@ export const Skillset = (): JSX.Element => {
               <MongoDBIcon />
               <PostgresDBIcon />
               <MySqlDBIcon />
+              <RedisIcon />
               <FirebaseIcon />
               <SocketIoIcon />
               <GraphQlIcon />
