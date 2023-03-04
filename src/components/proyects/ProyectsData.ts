@@ -60,7 +60,7 @@ export const PROYECTS_DATA: ProyectInterface[] = [
     desc: 'PhotoDisplay is a simple photo gallery that allows you to display photos from a URL and see them on the page.',
     links: {
       repo: 'https://github.com/Waxer59/PhotoDisplay',
-      url: 'https://photosdisplay.netlify.app/'
+      url: undefined
     }
   },
   {
