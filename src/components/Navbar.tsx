@@ -8,6 +8,8 @@ const THEMES = {
   light: 'light'
 }
 
+const RESPONSIVE_MENU_WIDTH = 640
+
 const Navbar: React.FC = () => {
   const { setLocalStorageItem, getLocalStorageItem } = useLocalStorage()
   const [theme, setTheme] = useState(
@@ -64,15 +66,15 @@ const Navbar: React.FC = () => {
   }, [screenSize])
 
   return (
-    <div className="container">
-      <header className="mt-[24px] mb-[148px] flex justify-between sm:gap-0 gap-[15px]">
+    <nav className="max-w-[1440px] w-[90%] mx-auto">
+      <header className="relative mt-[24px] mb-[148px] flex justify-between sm:gap-0 gap-[15px]">
         <h2 className="text-[1.5rem]">
           Wa<strong>dev</strong>
         </h2>
 
-        <ul className="absolute right-[65px] sm:right-0 sm:relative p-0 items-center ml-auto sm:ml-0 flex gap-[10px] sm:gap-[20px] flex-no-wrap text-[1.3rem] flex-col sm:flex-row">
+        <ul className="absolute right-[38px] sm:right-0 sm:relative p-0 items-center ml-auto sm:ml-0 flex gap-[10px] sm:gap-[20px] flex-no-wrap text-[1.3rem] flex-col sm:flex-row">
           <input
-            className="absolute block h-[1.5rem] w-[1.5rem] z5 opacity-0 cursor-pointer"
+            className="absolute block sm:hidden h-[1.5rem] w-[1.5rem] z-5 opacity-0 cursor-pointer"
             type="checkbox"
             id="barsMenuChkbx"
             aria-label="Hamburger menu"
@@ -90,7 +92,9 @@ const Navbar: React.FC = () => {
           </div>
           <div
             className={`absolute top-[38px] sm:top-0 sm:relative items-center flex gap-[10px] sm:gap-[20px] flex-no-wrap text-[1.3rem] flex-col sm:flex-row ${
-              screenSize.width <= 640 && !isMenuOpen ? 'hidden' : 'block'
+              screenSize.width < RESPONSIVE_MENU_WIDTH && !isMenuOpen
+                ? 'hidden'
+                : 'block'
             }`}>
             <li>
               <a className="about-btn" type="button" href="#about">
@@ -140,7 +144,7 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </header>
-    </div>
+    </nav>
   )
 }
 

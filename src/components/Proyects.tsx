@@ -3,7 +3,7 @@ import { PROYECTS_DATA } from './ProyectsData'
 
 const Proyects: React.FC = () => {
   return (
-    <div className="container">
+    <div className="max-w-[1440px] w-[90%] mx-auto">
       <div id="proyects">
         <h2 className="text-[3rem] font-400 text-center mt-[40px] mb-[100px]">
           Proyects
