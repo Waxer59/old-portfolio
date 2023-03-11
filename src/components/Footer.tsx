@@ -1,9 +1,9 @@
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa/index'
 
-export const Footer = (): JSX.Element => {
+const Footer: React.FC = () => {
   return (
-    <footer className="mt-[150px] p-[25px] bg-secondary">
-      <ul className="links-list p-0 flex justify-around list-none">
+    <footer className="mt-[150px] p-[25px] bg-secondaryColor">
+      <ul className="p-0 flex justify-around list-none">
         <li>
           <a
             href="https://github.com/Waxer59"
@@ -38,3 +38,5 @@ export const Footer = (): JSX.Element => {
     </footer>
   )
 }
+
+export default Footer

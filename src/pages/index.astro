@@ -42,11 +42,11 @@ import { WaveSvg } from '../components/Icons'
     />
     <title>Wadev Portfolio</title>
   </head>
-  <body>
+  <body class="bg-primaryColor transition-all ease-out duration-300 text-grayColor ">
     <BackToTop client:only="react" />
-    <Navbar client:load />
+    <Navbar client:only />
     <main class="main">
-      <h1>Hi, i'm <span>Wadev</span></h1>
+      <h1 class="text-center mb-[120px] text-[2rem] font-300">Hi, i'm <strong>Wadev</strong></h1>
       <img
         src="/images/flork.webp"
         width="500"

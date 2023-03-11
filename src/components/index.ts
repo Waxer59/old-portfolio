@@ -1,7 +1,9 @@
-export { BackToTop } from './backToTop/BackToTop'
-export { Contact } from './contact/Contact'
-export { Proyects } from './proyects/Proyects'
-export { Skillset } from './skillset/Skillset'
-export { About } from './about/About'
-export { Footer } from './Footer'
-export { Navbar } from './navbar/Navbar'
+import Contact from './Contact'
+import Proyects from './Proyects'
+import About from './About'
+import BackToTop from './BackToTop'
+import Skillset from './Skillset'
+import Footer from './Footer'
+import Navbar from './Navbar'
+
+export { Proyects, Contact, About, BackToTop, Skillset, Footer, Navbar }

@@ -21,6 +21,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/triple-slash-reference': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
     'no-console': 'error'
   }
 }

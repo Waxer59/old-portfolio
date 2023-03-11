@@ -1,14 +1,15 @@
-import { ProyectItem } from './ProyectItem'
-import './Proyects.css'
+import ProyectItem from './ProyectItem'
 import { PROYECTS_DATA } from './ProyectsData'
 
-export const Proyects = (): JSX.Element => {
+const Proyects: React.FC = () => {
   return (
     <div className="container">
-      <div className="proyects" id="proyects">
-        <h2>Proyects</h2>
+      <div id="proyects">
+        <h2 className="text-[3rem] font-400 text-center mt-[40px] mb-[100px]">
+          Proyects
+        </h2>
 
-        <ul className="proyects-links">
+        <ul className="p-0 list-none flex flex-wrap justify-evenly mt-0 gap-[25px]">
           {PROYECTS_DATA.map(({ name, desc, img, links }) => (
             <ProyectItem
               desc={desc}
@@ -23,3 +24,5 @@ export const Proyects = (): JSX.Element => {
     </div>
   )
 }
+
+export default Proyects

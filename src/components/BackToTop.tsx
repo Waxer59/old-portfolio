@@ -1,8 +1,7 @@
-import './BackToTop.css'
 import { FaChevronUp } from 'react-icons/fa/index'
 import { useRef, useEffect } from 'react'
 
-export const BackToTop = (): JSX.Element => {
+const BackToTop: React.FC = () => {
   const backToTopBtn = useRef<any>(null)
 
   const onBackToTopBtnClick = (): void => {
@@ -32,11 +31,13 @@ export const BackToTop = (): JSX.Element => {
     <button
       id="backToTop-btn"
       style={{ display: `${window.scrollY > 100 ? 'block' : 'none'}` }}
-      className="backToTop"
+      className="cursor-pointer fixed bottom-[20px] right-[15px] z-99 rounded-full text-white border-none text-[1.5rem] p-[1rem] shadow-xl bg-secondaryColor"
       aria-label="Back to top button"
       ref={backToTopBtn}
       onClick={onBackToTopBtnClick}>
-      <FaChevronUp />
+      <FaChevronUp className="transition all duration-300 ease-in-out" />
     </button>
   )
 }
+
+export default BackToTop
