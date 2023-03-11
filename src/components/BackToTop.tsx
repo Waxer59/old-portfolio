@@ -14,7 +14,7 @@ const BackToTop: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = (e: Event): void => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 100 && window.innerWidth > 250) {
         backToTopBtn.current.style.display = 'block'
       } else {
         backToTopBtn.current.style.display = 'none'
@@ -30,7 +30,11 @@ const BackToTop: React.FC = () => {
   return (
     <button
       id="backToTop-btn"
-      style={{ display: `${window.scrollY > 100 ? 'block' : 'none'}` }}
+      style={{
+        display: `${
+          window.scrollY > 100 && window.innerWidth > 250 ? 'block' : 'none'
+        }`
+      }}
       className="cursor-pointer fixed bottom-[20px] right-[15px] z-99 rounded-full text-white border-none text-[3.5rem] shadow-xl bg-secondaryColor"
       aria-label="Back to top button"
       ref={backToTopBtn}

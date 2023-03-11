@@ -31,7 +31,7 @@ const ProyectItem: React.FC<ProyectInterface> = ({
             aria-label={`${name} github proyect`}
             target="_blank"
             role="link"
-            className="text-secondary"
+            className="text-secondary cursor-pointer"
             rel="noreferrer">
             <FaGithub className="text-[2.5rem]" />
           </a>
