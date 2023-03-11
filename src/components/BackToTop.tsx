@@ -1,8 +1,7 @@
-import './BackToTop.css'
-import { FaChevronUp } from 'react-icons/fa/index'
 import { useRef, useEffect } from 'react'
+import { UpArrowSvg } from './Icons'
 
-export const BackToTop = (): JSX.Element => {
+const BackToTop: React.FC = () => {
   const backToTopBtn = useRef<any>(null)
 
   const onBackToTopBtnClick = (): void => {
@@ -15,7 +14,7 @@ export const BackToTop = (): JSX.Element => {
 
   useEffect(() => {
     const handleScroll = (e: Event): void => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 100 && window.innerWidth > 250) {
         backToTopBtn.current.style.display = 'block'
       } else {
         backToTopBtn.current.style.display = 'none'
@@ -31,12 +30,18 @@ export const BackToTop = (): JSX.Element => {
   return (
     <button
       id="backToTop-btn"
-      style={{ display: `${window.scrollY > 100 ? 'block' : 'none'}` }}
-      className="backToTop"
+      style={{
+        display: `${
+          window.scrollY > 100 && window.innerWidth > 250 ? 'block' : 'none'
+        }`
+      }}
+      className="cursor-pointer fixed bottom-[20px] right-[15px] z-99 rounded-full text-white border-none text-[3.5rem] shadow-xl bg-secondaryColor"
       aria-label="Back to top button"
       ref={backToTopBtn}
       onClick={onBackToTopBtnClick}>
-      <FaChevronUp />
+      <UpArrowSvg className="fill- transition all duration-300 ease-in-out" />
     </button>
   )
 }
+
+export default BackToTop
