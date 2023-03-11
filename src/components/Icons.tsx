@@ -474,3 +474,17 @@ export const WaveSvg = ({ className = '' }): JSX.Element => (
       fillOpacity="1"></path>
   </svg>
 )
+
+export const UpArrowSvg = ({ className = '' }): JSX.Element => (
+  <svg
+    stroke="currentColor"
+    fill="currentColor"
+    strokeWidth="0"
+    viewBox="0 0 24 24"
+    className={className}
+    height="1em"
+    width="1em"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="m12.001 8.001-4.005 4.005h3.005V16h2v-3.994h3.004z"></path>
+  </svg>
+)
