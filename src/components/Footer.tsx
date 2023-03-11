@@ -1,10 +1,9 @@
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa/index'
-import './Footer.css'
 
 export const Footer = (): JSX.Element => {
   return (
-    <footer className="footer">
-      <ul className="links-list">
+    <footer className="mt-[150px] p-[25px] bg-secondary">
+      <ul className="links-list p-0 flex justify-around list-none">
         <li>
           <a
             href="https://github.com/Waxer59"
@@ -12,7 +11,7 @@ export const Footer = (): JSX.Element => {
             target="_blank"
             aria-label="Wadev github profile"
             rel="noreferrer">
-            <FaGithub className="footer-icon" />
+            <FaGithub className="text-[2.5rem]" />
           </a>
         </li>
         <li>
@@ -22,7 +21,7 @@ export const Footer = (): JSX.Element => {
             target="_blank"
             rel="noreferrer"
             aria-label="Wadev linkedin profile">
-            <FaLinkedin className="footer-icon" />
+            <FaLinkedin className="text-[2.5rem]" />
           </a>
         </li>
         <li>
@@ -32,7 +31,7 @@ export const Footer = (): JSX.Element => {
             target="_blank"
             aria-label="Wadev twitter profile"
             rel="noreferrer">
-            <FaTwitter className="footer-icon" />
+            <FaTwitter className="text-[2.5rem]" />
           </a>
         </li>
       </ul>
