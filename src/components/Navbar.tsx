@@ -52,48 +52,48 @@ const Navbar: React.FC = () => {
         </h2>
 
         <ul className="absolute right-[38px] sm:right-0 sm:relative p-0 items-center ml-auto sm:ml-0 flex gap-[10px] sm:gap-[20px] flex-no-wrap text-[1.3rem] flex-col sm:flex-row">
-          <input
-            className="absolute block sm:hidden h-[1.5rem] w-[1.5rem] z-5 opacity-0 cursor-pointer"
-            type="checkbox"
-            id="barsMenuChkbx"
-            aria-label="Hamburger menu"
-            onChange={() => {
-              setIsMenuOpen(!isMenuOpen)
-            }}
-          />
-          <div className="flex sm:hidden text-[1.5rem]">
+          <li className="flex sm:hidden text-[1.5rem]">
+            <input
+              className="absolute block sm:hidden h-[1.5rem] w-[1.5rem] z-5 opacity-0 cursor-pointer"
+              type="checkbox"
+              id="barsMenuChkbx"
+              aria-label="Hamburger menu"
+              onChange={() => {
+                setIsMenuOpen(!isMenuOpen)
+              }}
+            />
             <span className={`${isMenuOpen ? 'hidden' : 'block'}`}>
               <FaBars />
             </span>
             <span className={`${isMenuOpen ? 'block' : 'hidden'}`}>
               <AiOutlineClose />
             </span>
-          </div>
-          <div
+          </li>
+          <li
             className={`absolute top-[38px] sm:top-0 sm:relative items-center flex gap-[10px] sm:gap-[20px] flex-no-wrap text-[1.3rem] flex-col sm:flex-row ${
               isMenuOpen ? '' : 'hidden sm:flex'
             }`}>
-            <li>
+            <div>
               <a className="about-btn" type="button" href="#about">
                 About
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a className="skillset-btn" type="button" href="#skillset">
                 Skillset
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a className="proyects-btn" type="button" href="#proyects">
                 Proyects
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a className="contact-btn" type="button" href="#contact">
                 Contact
               </a>
-            </li>
-            <li>
+            </div>
+            <div>
               <a
                 className="blog-btn"
                 href="https://blog.wadev.dev/"
@@ -101,8 +101,8 @@ const Navbar: React.FC = () => {
                 rel="noreferrer">
                 Blog
               </a>
-            </li>
-          </div>
+            </div>
+          </li>
         </ul>
 
         <div className="text-[1.5rem]">
