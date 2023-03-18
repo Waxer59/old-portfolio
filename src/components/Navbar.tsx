@@ -8,25 +8,12 @@ const THEMES = {
   light: 'light'
 }
 
-const RESPONSIVE_MENU_WIDTH = 640
-
 const Navbar: React.FC = () => {
   const { setLocalStorageItem, getLocalStorageItem } = useLocalStorage()
   const [theme, setTheme] = useState(
     getLocalStorageItem(LocalStorageItems.theme) ?? THEMES.dark
   )
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [screenSize, getDimension] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
-  })
-
-  const setDimension = (): void => {
-    getDimension({
-      width: window.innerWidth,
-      height: window.innerHeight
-    })
-  }
 
   const onThemeTogglerClick = (): void => {
     setTheme((currentTheme: any) =>
@@ -57,14 +44,6 @@ const Navbar: React.FC = () => {
     scrollToHashElement()
   }, [])
 
-  useEffect(() => {
-    window.addEventListener('resize', setDimension)
-
-    return () => {
-      window.removeEventListener('resize', setDimension)
-    }
-  }, [screenSize])
-
   return (
     <nav className="max-w-[1440px] w-[90%] mx-auto">
       <header className="relative mt-[24px] mb-[148px] flex justify-between sm:gap-0 gap-[15px]">
@@ -82,7 +61,7 @@ const Navbar: React.FC = () => {
               setIsMenuOpen(!isMenuOpen)
             }}
           />
-          <div className="flex block sm:hidden text-[1.5rem]">
+          <div className="flex sm:hidden text-[1.5rem]">
             <span className={`${isMenuOpen ? 'hidden' : 'block'}`}>
               <FaBars />
             </span>
@@ -92,9 +71,7 @@ const Navbar: React.FC = () => {
           </div>
           <div
             className={`absolute top-[38px] sm:top-0 sm:relative items-center flex gap-[10px] sm:gap-[20px] flex-no-wrap text-[1.3rem] flex-col sm:flex-row ${
-              screenSize.width < RESPONSIVE_MENU_WIDTH && !isMenuOpen
-                ? 'hidden'
-                : 'block'
+              isMenuOpen ? '' : 'hidden sm:flex'
             }`}>
             <li>
               <a className="about-btn" type="button" href="#about">
