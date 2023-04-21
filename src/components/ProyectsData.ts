@@ -69,7 +69,7 @@ export const PROYECTS_DATA: ProyectInterface[] = [
     desc: 'Your favorite javascript playground now in desktop, with a beautiful interface and a lot of features.',
     links: {
       repo: 'https://github.com/Waxer59/DinamicJs-Desktop',
-      url: "https://get-dinamicjs.netlify.app/"
+      url: 'https://get-dinamicjs.netlify.app/'
     }
   },
   {
