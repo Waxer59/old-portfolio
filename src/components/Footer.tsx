@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/hugo-boyano-39ba0624a"
+            href="#"
             id="linkedin-btn"
             target="_blank"
             rel="noreferrer"

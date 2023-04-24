@@ -15,7 +15,7 @@ const ProyectItem: React.FC<ProyectInterface> = ({
         src={`/images/proyects/${img}`}
         width="650"
         height="450"
-        className="block mx-auto h-full md:h-[200px] w-full p-[10px]"
+        className="block mx-auto h-full md:h-[200px] w-full p-[10px] object-cover rounded-[15px]"
         alt={`${name} photo`}
       />
       <h3 className="border-t-[1px] border-solid border-gray pt-[20px] pb-0 text-[1.5rem] text-center font-semibold">
