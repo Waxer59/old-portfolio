@@ -21,7 +21,9 @@ import {
   NodeIcon,
   JavaIcon,
   TypeScriptIcon,
-  JavaScriptIcon
+  JavaScriptIcon,
+  RedisIcon,
+  GoIcon
 } from './Icons'
 
 const Skillset: React.FC = () => {
@@ -40,6 +42,7 @@ const Skillset: React.FC = () => {
             <div className="flex flex-wrap gap-[15px]">
               <JavaScriptIcon className="h-[50px] m-0 mb-[15px]" />
               <TypeScriptIcon className="h-[50px] m-0 mb-[15px]" />
+              <GoIcon className="h-[50px] m-0 mb-[15px]" />
               <JavaIcon className="h-[50px] m-0 mb-[15px]" />
             </div>
           </li>
@@ -56,6 +59,7 @@ const Skillset: React.FC = () => {
               <PostgresDBIcon className="h-[50px] m-0 mb-[15px]" />
               <MySqlDBIcon className="h-[50px] m-0 mb-[15px]" />
               <FirebaseIcon className="h-[50px] m-0 mb-[15px]" />
+              <RedisIcon className="h-[50px] m-0 mb-[15px]" />
               <SocketIoIcon className="h-[50px] m-0 mb-[15px]" />
               <GraphQlIcon className="h-[50px] m-0 mb-[15px]" />
             </div>
