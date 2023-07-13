@@ -28,20 +28,20 @@ export const PROYECTS_DATA: ProyectInterface[] = [
     }
   },
   {
-    name: 'QrCreator',
-    img: 'qrCreator.webp',
-    desc: "QrCreator as its name says is a qr's creator in which you can download the qr.",
+    name: 'PikaLang',
+    img: 'pikalang.webp',
+    desc: 'A basic programming language written in Go',
     links: {
-      repo: 'https://github.com/Waxer59/QrCreator',
+      repo: 'https://github.com/Waxer59/PikaLang',
       url: undefined
     }
   },
   {
-    name: 'UrlShortener',
-    img: 'urlShortener.webp',
-    desc: "UrlShortener is a url's shortener, it makes the new urls look great.",
+    name: 'JobReady',
+    img: 'jobReady.webp',
+    desc: 'An amazing job interview simulator',
     links: {
-      repo: 'https://github.com/Waxer59/UrlShortener',
+      repo: 'https://github.com/Waxer59/JobReady',
       url: undefined
     }
   },
