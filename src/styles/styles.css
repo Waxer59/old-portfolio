@@ -18,16 +18,13 @@
     --border-color: #b1b1b1;
   }
 
-  body {
-    overflow: overlay;
-  }
-
   html {
     scroll-behavior: smooth;
     font-size: clamp(12px, 1.5vw, 16px);
     scrollbar-color: #5c5c5c;
     scrollbar-width: thin;
   }
+
   button:hover svg,
   a:hover svg,
   button:hover,
@@ -35,34 +32,37 @@
     fill: var(--hover-color);
     color: var(--hover-color);
   }
+
   a svg,
   button svg,
   a {
     transition: all 0.2s ease-in-out;
   }
+
   a {
     text-decoration: none;
   }
+
   * {
     font-family: sans-serif, Arial, Helvetica;
   }
+
   /* width */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
   }
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #5c5c5c;
     border-radius: 5px;
   }
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #6c6c6c;
   }
+
   .mainPhoto {
     display: block;
     margin: 0 auto;
