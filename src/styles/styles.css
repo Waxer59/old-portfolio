@@ -33,6 +33,10 @@
     color: var(--hover-color);
   }
 
+  p {
+    text-wrap: balance;
+  }
+
   a svg,
   button svg,
   a {
