@@ -29,21 +29,6 @@ const Navbar: React.FC = () => {
       ?.classList.remove(theme === THEMES.dark ? THEMES.light : THEMES.dark)
   }, [theme])
 
-  useEffect(() => {
-    const scrollToHashElement = (): never | undefined => {
-      const { hash } = window.location
-      const elementToScroll = document.getElementById(hash?.replace('#', ''))
-      if (elementToScroll === null) {
-        return
-      }
-      window.scrollTo({
-        top: elementToScroll.offsetTop,
-        behavior: 'smooth'
-      })
-    }
-    scrollToHashElement()
-  }, [])
-
   return (
     <nav className="max-w-[1440px] w-[90%] mx-auto">
       <header className="relative mt-[24px] mb-[148px] flex justify-between sm:gap-0 gap-[15px]">
