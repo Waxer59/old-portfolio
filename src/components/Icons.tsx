@@ -1,4 +1,6 @@
-export const JavaScriptIcon = ({ className = '' }): JSX.Element => (
+export const JavaScriptIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
     <path
@@ -7,7 +9,9 @@ export const JavaScriptIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const TypeScriptIcon = ({ className = '' }): JSX.Element => (
+export const TypeScriptIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
     <path
@@ -17,7 +21,9 @@ export const TypeScriptIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const JavaIcon = ({ className = '' }): JSX.Element => (
+export const JavaIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#0074BD"
@@ -37,7 +43,9 @@ export const JavaIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const NodeIcon = ({ className = '' }): JSX.Element => (
+export const NodeIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#83CD29"
@@ -45,13 +53,17 @@ export const NodeIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const ExpressIcon = ({ className = '' }): JSX.Element => (
+export const ExpressIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08zm5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57z"></path>
   </svg>
 )
 
-export const NestjsIcon = ({ className = '' }): JSX.Element => (
+export const NestjsIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#DF234F"
@@ -59,7 +71,9 @@ export const NestjsIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const MongoDBIcon = ({ className = '' }): JSX.Element => (
+export const MongoDBIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fillRule="evenodd"
@@ -144,7 +158,9 @@ export const MongoDBIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const PostgresDBIcon = ({ className = '' }): JSX.Element => (
+export const PostgresDBIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.652-14.709 4.402 0 0-44.683-18.409-42.604 23.151.442 8.841 12.672 66.898 27.26 49.362 5.332-6.412 10.484-11.834 10.484-11.834 2.558 1.699 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.044 1.575.099 2.497-3.757 4.199-2.653 4.936-10.166 6.482-7.602 1.566-3.136 4.355-.221 5.084 3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69.209 5.214.558 10.079 1.621 12.948 1.063 2.868 2.317 10.256 12.191 8.14 8.252-1.764 14.561-4.309 15.136-27.985"></path>
     <path d="M75.458 125.256c-4.367 0-7.211-1.689-8.938-3.32-2.607-2.46-3.641-5.629-4.259-7.522l-.267-.79c-1.244-3.358-1.666-8.193-1.916-14.419-.038-.935-.064-1.898-.093-2.919-.021-.747-.047-1.684-.085-2.664a18.8 18.8 0 01-4.962 1.568c-3.079.526-6.389.356-9.84-.507-2.435-.609-4.965-1.871-6.407-3.82-4.203 3.681-8.212 3.182-10.396 2.453-3.853-1.285-7.301-4.896-10.542-11.037-2.309-4.375-4.542-10.075-6.638-16.943-3.65-11.96-5.969-24.557-6.175-28.693C4.292 23.698 7.777 14.44 15.296 9.129 27.157.751 45.128 5.678 51.68 7.915c4.402-2.653 9.581-3.944 15.433-3.851 3.143.051 6.136.327 8.916.823 2.9-.912 8.628-2.221 15.185-2.139 12.081.144 22.092 4.852 28.949 13.615 4.894 6.252 2.474 19.381.597 26.651-2.642 10.226-7.271 21.102-12.957 30.57 1.544.011 3.781-.174 6.961-.831 6.274-1.295 8.109 2.069 8.607 3.575 1.995 6.042-6.677 10.608-9.382 11.864-3.466 1.609-9.117 2.589-13.745 2.377l-.202-.013-1.216-.107-.12 1.014-.116.991c-.311 11.999-2.025 19.598-5.552 24.619-3.697 5.264-8.835 6.739-13.361 7.709-1.544.33-2.947.474-4.219.474zm-9.19-43.671c2.819 2.256 3.066 6.501 3.287 14.434.028.99.054 1.927.089 2.802.106 2.65.355 8.855 1.327 11.477.137.371.26.747.39 1.146 1.083 3.316 1.626 4.979 6.309 3.978 3.931-.843 5.952-1.599 7.534-3.851 2.299-3.274 3.585-9.86 3.821-19.575l4.783.116-4.75-.57.14-1.186c.455-3.91.783-6.734 3.396-8.602 2.097-1.498 4.486-1.353 6.389-1.01-2.091-1.58-2.669-3.433-2.823-4.193l-.399-1.965 1.121-1.663c6.457-9.58 11.781-21.354 14.609-32.304 2.906-11.251 2.02-17.226 1.134-18.356-11.729-14.987-32.068-8.799-34.192-8.097l-.359.194-1.8.335-.922-.191c-2.542-.528-5.366-.82-8.393-.869-4.756-.08-8.593 1.044-11.739 3.431l-2.183 1.655-2.533-1.043c-5.412-2.213-21.308-6.662-29.696-.721-4.656 3.298-6.777 9.76-6.305 19.207.156 3.119 2.275 14.926 5.771 26.377 4.831 15.825 9.221 21.082 11.054 21.693.32.108 1.15-.537 1.976-1.529a270.708 270.708 0 0110.694-12.07l2.77-2.915 3.349 2.225c1.35.897 2.839 1.406 4.368 1.502l7.987-6.812-1.157 11.808c-.026.265-.039.626.065 1.296l.348 2.238-1.51 1.688-.174.196 4.388 2.025 1.836-2.301z"></path>
@@ -157,7 +173,9 @@ export const PostgresDBIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const MySqlDBIcon = ({ className = '' }): JSX.Element => (
+export const MySqlDBIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#00618A"
@@ -165,7 +183,9 @@ export const MySqlDBIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const FirebaseIcon = ({ className = '' }): JSX.Element => (
+export const FirebaseIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#f58220"
@@ -173,7 +193,9 @@ export const FirebaseIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const SocketIoIcon = ({ className = '' }): JSX.Element => (
+export const SocketIoIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <g fill="#010101" fillRule="evenodd">
       <path
@@ -188,7 +210,9 @@ export const SocketIoIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const GraphQlIcon = ({ className = '' }): JSX.Element => (
+export const GraphQlIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <g fill="#E434AA">
       <path d="M18.39 96.852l-4.6-2.657L65.04 5.434l4.597 2.656zm0 0"></path>
@@ -203,7 +227,9 @@ export const GraphQlIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const HtmlIcon = ({ className = '' }): JSX.Element => (
+export const HtmlIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#E44D26"
@@ -218,7 +244,9 @@ export const HtmlIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const CssIcon = ({ className = '' }): JSX.Element => (
+export const CssIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#1572B6"
@@ -241,7 +269,9 @@ export const CssIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const SassIcon = ({ className = '' }): JSX.Element => (
+export const SassIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fillRule="evenodd"
@@ -251,7 +281,9 @@ export const SassIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const BootstrapIcon = ({ className = '' }): JSX.Element => (
+export const BootstrapIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <defs>
       <linearGradient
@@ -310,7 +342,9 @@ export const BootstrapIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const MaterialUiIcon = ({ className = '' }): JSX.Element => (
+export const MaterialUiIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#1FA6CA"
@@ -325,7 +359,9 @@ export const MaterialUiIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const TailwindIcon = ({ className = '' }): JSX.Element => (
+export const TailwindIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
@@ -333,7 +369,9 @@ export const TailwindIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const ReactIcon = ({ className = '' }): JSX.Element => (
+export const ReactIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <g fill="#61DAFB">
       <circle cx="64" cy="64" r="11.4"></circle>
@@ -342,7 +380,9 @@ export const ReactIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const ReduxIcon = ({ className = '' }): JSX.Element => (
+export const ReduxIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path fill="none" d="M0 0h128v128H0z"></path>
     <path
@@ -351,7 +391,9 @@ export const ReduxIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const DockerIcon = ({ className = '' }): JSX.Element => (
+export const DockerIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fillRule="evenodd"
@@ -424,7 +466,9 @@ export const DockerIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const GitIcon = ({ className = '' }): JSX.Element => (
+export const GitIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#F34F29"
@@ -432,7 +476,9 @@ export const GitIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const JestIcon = ({ className = '' }): JSX.Element => (
+export const JestIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg className={className} viewBox="0 0 128 128">
     <path
       fill="#99425B"
@@ -440,7 +486,9 @@ export const JestIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const WaveSvg = ({ className = '' }): JSX.Element => (
+export const WaveSvg = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg
     style={{ marginTop: '-15%', fill: 'var(--secondary-color)' }}
     width="100%"
@@ -475,7 +523,9 @@ export const WaveSvg = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const UpArrowSvg = ({ className = '' }): JSX.Element => (
+export const UpArrowSvg = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -489,7 +539,9 @@ export const UpArrowSvg = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const RedisIcon = ({ className = '' }): JSX.Element => (
+export const RedisIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg viewBox="0 0 128 128" className={className}>
     <path
       fill="#A41E11"
@@ -518,7 +570,9 @@ export const RedisIcon = ({ className = '' }): JSX.Element => (
   </svg>
 )
 
-export const GoIcon = ({ className = '' }): JSX.Element => (
+export const GoIcon = ({
+  className = 'h-[50px] m-0 mb-[15px]'
+}): JSX.Element => (
   <svg viewBox="0 0 128 128" className={className}>
     <g fill="#00acd7" fillRule="evenodd">
       <path d="M11.156 54.829c-.243 0-.303-.122-.182-.303l1.273-1.637c.12-.182.424-.303.666-.303H34.55c.243 0 .303.182.182.364l-1.03 1.576c-.121.181-.424.363-.606.363zM2.004 60.404c-.242 0-.303-.12-.182-.303l1.273-1.636c.121-.182.424-.303.667-.303h27.636c.242 0 .364.182.303.364l-.485 1.454c-.06.243-.303.364-.545.364zM16.67 65.98c-.242 0-.302-.182-.181-.364l.848-1.515c.122-.182.364-.363.607-.363h12.12c.243 0 .364.181.364.424l-.12 1.454c0 .243-.243.425-.425.425zM79.58 53.738c-3.819.97-6.425 1.697-10.182 2.666-.91.243-.97.303-1.758-.606-.909-1.03-1.576-1.697-2.848-2.303-3.819-1.878-7.516-1.333-10.97.91-4.121 2.666-6.242 6.605-6.182 11.514.06 4.849 3.394 8.849 8.182 9.516 4.121.545 7.576-.91 10.303-4 .545-.667 1.03-1.394 1.636-2.243H56.064c-1.272 0-1.575-.788-1.151-1.818.788-1.879 2.242-5.03 3.09-6.606.183-.364.607-.97 1.516-.97h22.06c-.12 1.637-.12 3.273-.363 4.91-.667 4.363-2.303 8.363-4.97 11.878-4.364 5.758-10.06 9.333-17.273 10.303-5.939.788-11.454-.364-16.302-4-4.485-3.394-7.03-7.879-7.697-13.454-.788-6.606 1.151-12.546 5.151-17.758 4.303-5.636 10-9.212 16.97-10.485 5.697-1.03 11.151-.363 16.06 2.97 3.212 2.121 5.515 5.03 7.03 8.545.364.546.122.849-.606 1.03z"></path>

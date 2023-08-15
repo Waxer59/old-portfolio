@@ -40,10 +40,10 @@ const Skillset: React.FC = () => {
               Languages
             </h3>
             <div className="flex flex-wrap gap-[15px]">
-              <JavaScriptIcon className="h-[50px] m-0 mb-[15px]" />
-              <TypeScriptIcon className="h-[50px] m-0 mb-[15px]" />
-              <GoIcon className="h-[50px] m-0 mb-[15px]" />
-              <JavaIcon className="h-[50px] m-0 mb-[15px]" />
+              <JavaScriptIcon />
+              <TypeScriptIcon />
+              <GoIcon />
+              <JavaIcon />
             </div>
           </li>
 
@@ -52,16 +52,16 @@ const Skillset: React.FC = () => {
               Back-end
             </h3>
             <div className="flex flex-wrap gap-[15px]">
-              <NodeIcon className="h-[50px] m-0 mb-[15px]" />
-              <ExpressIcon className="h-[50px] m-0 mb-[15px]" />
-              <NestjsIcon className="h-[50px] m-0 mb-[15px]" />
-              <MongoDBIcon className="h-[50px] m-0 mb-[15px]" />
-              <PostgresDBIcon className="h-[50px] m-0 mb-[15px]" />
-              <MySqlDBIcon className="h-[50px] m-0 mb-[15px]" />
-              <FirebaseIcon className="h-[50px] m-0 mb-[15px]" />
-              <RedisIcon className="h-[50px] m-0 mb-[15px]" />
-              <SocketIoIcon className="h-[50px] m-0 mb-[15px]" />
-              <GraphQlIcon className="h-[50px] m-0 mb-[15px]" />
+              <NodeIcon />
+              <ExpressIcon />
+              <NestjsIcon />
+              <MongoDBIcon />
+              <PostgresDBIcon />
+              <MySqlDBIcon />
+              <FirebaseIcon />
+              <RedisIcon />
+              <SocketIoIcon />
+              <GraphQlIcon />
             </div>
           </li>
 
@@ -70,14 +70,14 @@ const Skillset: React.FC = () => {
               Front-end
             </h3>
             <div className="flex flex-wrap gap-[15px]">
-              <HtmlIcon className="h-[50px] m-0 mb-[15px]" />
-              <CssIcon className="h-[50px] m-0 mb-[15px]" />
-              <SassIcon className="h-[50px] m-0 mb-[15px]" />
-              <BootstrapIcon className="h-[50px] m-0 mb-[15px]" />
-              <MaterialUiIcon className="h-[50px] m-0 mb-[15px]" />
-              <TailwindIcon className="h-[50px] m-0 mb-[15px]" />
-              <ReactIcon className="h-[50px] m-0 mb-[15px]" />
-              <ReduxIcon className="h-[50px] m-0 mb-[15px]" />
+              <HtmlIcon />
+              <CssIcon />
+              <SassIcon />
+              <BootstrapIcon />
+              <MaterialUiIcon />
+              <TailwindIcon />
+              <ReactIcon />
+              <ReduxIcon />
             </div>
           </li>
 
@@ -86,9 +86,9 @@ const Skillset: React.FC = () => {
               DevOps & Testing
             </h3>
             <div className="flex flex-wrap gap-[15px]">
-              <DockerIcon className="h-[50px] m-0 mb-[15px]" />
-              <GitIcon className="h-[50px] m-0 mb-[15px]" />
-              <JestIcon className="h-[50px] m-0 mb-[15px]" />
+              <DockerIcon />
+              <GitIcon />
+              <JestIcon />
             </div>
           </li>
         </ul>
