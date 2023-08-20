@@ -10,15 +10,6 @@ export interface ProyectInterface {
 
 export const PROYECTS_DATA: ProyectInterface[] = [
   {
-    name: 'Tasker',
-    img: 'tasker.webp',
-    desc: 'Tasker is a web application that allows you to create tasks and store them remotely, and all thanks to its login system.',
-    links: {
-      repo: 'https://github.com/Waxer59/tasker',
-      url: undefined
-    }
-  },
-  {
     name: 'DinamicJs',
     img: 'dinamicJs.webp',
     desc: 'DinamicJs is a real time javascript playground!!',
