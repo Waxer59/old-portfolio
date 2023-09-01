@@ -38,8 +38,8 @@ const Navbar: React.FC = () => {
           Wa<strong>dev</strong>
         </h2>
 
-        <ul className="right-[38px] sm:right-0 sm:relative p-0 items-center ml-auto sm:ml-0 flex gap-[10px] sm:gap-[20px] flex-no-wrap text-[1.3rem] flex-col sm:flex-row">
-          <li className="flex sm:hidden text-[1.5rem] hover:text-hoverColor transition-colors">
+        <ul className="right-[38px] sm:right-0 sm:relative p-0 items-center ml-auto sm:ml-0 flex gap-[10px] sm:gap-[20px] flex-no-wrap text-xl flex-col sm:flex-row">
+          <li className="flex sm:hidden text-xl sm:text-2xl hover:text-hoverColor transition-colors">
             <input
               className="absolute block sm:hidden h-[1.5rem] w-[1.5rem] z-5 opacity-0 cursor-pointer"
               type="checkbox"
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
         </ul>
 
         <button
-          className="text-2xl hover:text-hoverColor transition-colors"
+          className="text-xl sm:text-2xl hover:text-hoverColor transition-colors"
           aria-label="toggle"
           onClick={onThemeTogglerClick}>
           <span className={`${theme === THEMES.dark ? 'block' : 'hidden'}`}>
