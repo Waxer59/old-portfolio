@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
           Wa<strong>dev</strong>
         </h2>
 
-        <ul className="right-[38px] sm:right-0 sm:relative p-0 items-center ml-auto sm:ml-0 flex gap-[10px] sm:gap-[20px] flex-no-wrap text-xl flex-col sm:flex-row">
+        <ul className="right-[38px] sm:right-0 sm:relative p-0 items-center ml-auto sm:ml-0 flex gap-[10px] sm:gap-[20px] flex-no-wrap text-md sm:text-xl flex-col sm:flex-row">
           <li className="flex sm:hidden text-xl sm:text-2xl hover:text-hoverColor transition-colors">
             <input
               className="absolute block sm:hidden h-[1.5rem] w-[1.5rem] z-5 opacity-0 cursor-pointer"
@@ -60,8 +60,8 @@ const Navbar: React.FC = () => {
             </span>
           </li>
           <li
-            className={`absolute top-[38px] sm:top-0 sm:relative items-center flex gap-3 sm:gap-5 flex-no-wrap text-xl flex-col sm:flex-row ${
-              isMenuOpen ? '' : 'hidden sm:flex'
+            className={`absolute top-[38px] sm:top-0 sm:relative items-center flex gap-1 sm:gap-5 flex-no-wrap flex-col sm:flex-row ${
+              isMenuOpen ? '' : 'hidden sm:flex-row'
             }`}>
             {NAVBAR_ITEMS.map((el) => (
               <a
