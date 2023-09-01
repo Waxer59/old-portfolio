@@ -3,11 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'standard-with-typescript',
-    'prettier'
-  ],
+  extends: ['plugin:react/recommended', 'standard-with-typescript', 'prettier'],
   ignorePatterns: ['vite.config.ts', 'netlify/', '/*', '!/src'],
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -29,11 +25,11 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/consistent-indexed-object-style': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off'
   },
   settings: {
     react: {
       version: 'detect'
     }
   }
-};
+}
