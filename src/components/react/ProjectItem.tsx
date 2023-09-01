@@ -32,7 +32,7 @@ const ProjectItem: React.FC<ProyectInterface> = ({
             target="_blank"
             className="transition-colors hover:text-hoverColor"
             rel="noreferrer">
-            <FaGithub className="text-[2.5rem]" />
+            <FaGithub className="text-4xl sm:text-[40px]" />
           </a>
         </li>
         {links.url !== undefined && (
@@ -43,7 +43,7 @@ const ProjectItem: React.FC<ProyectInterface> = ({
               className="transition-colors hover:text-hoverColor"
               target="_blank"
               rel="noreferrer">
-              <FaLink className="text-[2.5rem]" />
+              <FaLink className="text-4xl sm:text-[40px]" />
             </a>
           </li>
         )}

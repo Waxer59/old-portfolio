@@ -4,17 +4,17 @@ import { FooterItem, type FooterItemProps } from '.'
 const FOOTER_ITEMS: FooterItemProps[] = [
   {
     href: 'https://github.com/Waxer59',
-    icon: <FaGithub className="text-[2.5rem]" />,
+    icon: <FaGithub className="text-4xl sm:text-[40px]" />,
     webName: 'Github'
   },
   {
     href: '#',
-    icon: <FaLinkedin className="text-[2.5rem]" />,
+    icon: <FaLinkedin className="text-4xl sm:text-[40px]" />,
     webName: 'Linkedin'
   },
   {
     href: 'https://twitter.com/Waxer59',
-    icon: <FaTwitter className="text-[2.5rem]" />,
+    icon: <FaTwitter className="text-4xl sm:text-[40px]" />,
     webName: 'Twitter'
   }
 ]
