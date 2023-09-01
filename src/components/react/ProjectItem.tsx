@@ -1,7 +1,7 @@
 import type { ProyectInterface } from '../../constants/ProyectsData'
 import { FaLink, FaGithub } from 'react-icons/fa/index'
 
-const ProyectItem: React.FC<ProyectInterface> = ({
+const ProjectItem: React.FC<ProyectInterface> = ({
   name,
   img,
   desc,
@@ -21,7 +21,7 @@ const ProyectItem: React.FC<ProyectInterface> = ({
       <h3 className="border-t-[1px] border-solid border-gray pt-[20px] pb-0 text-2xl text-center font-semibold">
         {name}
       </h3>
-      <p className="[text-wrap:balance] my-[18px] text-xl sm:text-2xl md:text-xl text-center">
+      <p className="[text-wrap:balance] my-[18px] text-lg sm:text-2xl md:text-xl text-center">
         {desc}
       </p>
       <ul className="flex justify-evenly p-0 mt-auto pb-[30px]">
@@ -52,4 +52,4 @@ const ProyectItem: React.FC<ProyectInterface> = ({
   )
 }
 
-export default ProyectItem
+export default ProjectItem

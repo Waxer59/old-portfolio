@@ -1,7 +1,7 @@
-import ProyectItem from './ProyectItem'
-import { PROYECTS_DATA } from '../../constants/ProyectsData'
+import { ProjectItem } from '.'
+import { PROJECTS_DATA } from '../../constants/ProyectsData'
 
-const Proyects: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <div className="max-w-[1440px] w-[90%] mx-auto">
       <div id="proyects">
@@ -10,8 +10,8 @@ const Proyects: React.FC = () => {
         </h2>
 
         <ul className="p-0 list-none flex flex-wrap justify-evenly mt-0 gap-[25px]">
-          {PROYECTS_DATA.map(({ name, desc, img, links }) => (
-            <ProyectItem
+          {PROJECTS_DATA.map(({ name, desc, img, links }) => (
+            <ProjectItem
               desc={desc}
               img={img}
               links={links}
@@ -25,4 +25,4 @@ const Proyects: React.FC = () => {
   )
 }
 
-export default Proyects
+export default Projects

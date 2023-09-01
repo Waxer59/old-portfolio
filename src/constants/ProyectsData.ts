@@ -8,7 +8,7 @@ export interface ProyectInterface {
   }
 }
 
-export const PROYECTS_DATA: ProyectInterface[] = [
+export const PROJECTS_DATA: ProyectInterface[] = [
   {
     name: 'DinamicJs',
     img: 'dinamicJs',
