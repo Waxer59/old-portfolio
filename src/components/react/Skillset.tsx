@@ -28,8 +28,8 @@ import {
 
 const Skillset: React.FC = () => {
   return (
-    <div className="max-w-[1440px] w-[90%] mx-auto" id="skillset">
-      <div className="max-w-[1440px] w-[90%] mx-auto">
+    <div className="max-w-[1440px] w-11/12 mx-auto" id="skillset">
+      <div className="max-w-[1440px] w-11/12 mx-auto">
         <h2 className="text-4xl sm:text-5xl font-400 text-center mt-[40px] mb-[100px]">
           Skillset
         </h2>
