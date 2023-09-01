@@ -5,6 +5,7 @@ const BackToTop: React.FC = () => {
   const backToTopBtn = useRef<any>(null)
 
   const onBackToTopBtnClick = (): void => {
+    history.pushState(null, '', '/')
     window.scroll({
       top: 0,
       left: 0,
@@ -13,7 +14,7 @@ const BackToTop: React.FC = () => {
   }
 
   useEffect(() => {
-    const handleScroll = (e: Event): void => {
+    const handleScroll = (): void => {
       if (window.scrollY > 100 && window.innerWidth > 250) {
         backToTopBtn.current.style.display = 'block'
       } else {
@@ -29,17 +30,16 @@ const BackToTop: React.FC = () => {
 
   return (
     <button
-      id="backToTop-btn"
       style={{
         display: `${
           window.scrollY > 100 && window.innerWidth > 250 ? 'block' : 'none'
         }`
       }}
-      className="cursor-pointer fixed bottom-[20px] right-[15px] z-99 rounded-full text-white border-none text-[3.5rem] shadow-xl bg-secondaryColor"
+      className="cursor-pointer fixed bottom-[20px] right-[15px] z-99 rounded-full text-white border-none text-5xl sm:text-6xl shadow-xl bg-secondaryColor hover:text-hoverColor"
       aria-label="Back to top button"
       ref={backToTopBtn}
       onClick={onBackToTopBtnClick}>
-      <UpArrowSvg className="fill- transition all duration-300 ease-in-out" />
+      <UpArrowSvg className="transition all duration-300 ease-in-out" />
     </button>
   )
 }

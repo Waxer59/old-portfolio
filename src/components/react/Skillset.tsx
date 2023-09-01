@@ -28,15 +28,15 @@ import {
 
 const Skillset: React.FC = () => {
   return (
-    <div className="max-w-[1440px] w-[90%] mx-auto" id="skillset">
-      <div className="max-w-[1440px] w-[90%] mx-auto">
-        <h2 className="text-[3rem] font-400 text-center mt-[40px] mb-[100px]">
+    <div className="max-w-[1440px] w-11/12 mx-auto" id="skillset">
+      <div className="max-w-[1440px] w-11/12 mx-auto">
+        <h2 className="text-4xl sm:text-5xl font-400 text-center mt-[40px] mb-[100px]">
           Skillset
         </h2>
 
         <ul className="flex flex-col gap-[50px] list-none">
           <li data-aos="zoom-in-up">
-            <h3 className="border-b-[1px] border-solid border-borderColor p-[15px] font-300 text-[1.5rem] mt-0 mb-[25px]">
+            <h3 className="border-b-[1px] border-solid border-borderColor p-[15px] font-300 text-xl sm:text-2xl mt-0 mb-[25px]">
               Languages
             </h3>
             <div className="flex flex-wrap gap-[15px]">
@@ -48,7 +48,7 @@ const Skillset: React.FC = () => {
           </li>
 
           <li data-aos="zoom-in-up">
-            <h3 className="border-b-[1px] border-solid border-borderColor p-[15px] font-300 text-[1.5rem] mt-0 mb-[25px]">
+            <h3 className="border-b-[1px] border-solid border-borderColor p-[15px] font-300 text-xl sm:text-2xl mt-0 mb-[25px]">
               Back-end
             </h3>
             <div className="flex flex-wrap gap-[15px]">
@@ -66,7 +66,7 @@ const Skillset: React.FC = () => {
           </li>
 
           <li data-aos="zoom-in-up">
-            <h3 className="border-b-[1px] border-solid border-borderColor p-[15px] font-300 text-[1.5rem] mt-0 mb-[25px]">
+            <h3 className="border-b-[1px] border-solid border-borderColor p-[15px] font-300 text-xl sm:text-2xl mt-0 mb-[25px]">
               Front-end
             </h3>
             <div className="flex flex-wrap gap-[15px]">
@@ -82,7 +82,7 @@ const Skillset: React.FC = () => {
           </li>
 
           <li data-aos="zoom-in-up">
-            <h3 className="border-b-[1px] border-solid border-borderColor p-[15px] font-300 text-[1.5rem] mt-0 mb-[25px]">
+            <h3 className="border-b-[1px] border-solid border-borderColor p-[15px] font-300 text-xl sm:text-2xl mt-0 mb-[25px]">
               DevOps & Testing
             </h3>
             <div className="flex flex-wrap gap-[15px]">
