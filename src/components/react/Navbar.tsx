@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
           </li>
           <li
             className={`absolute top-[38px] sm:top-0 sm:relative items-center flex gap-1 sm:gap-5 flex-no-wrap flex-col sm:flex-row ${
-              isMenuOpen ? '' : 'hidden sm:flex-row'
+              isMenuOpen ? '' : 'hidden sm:flex'
             }`}>
             {NAVBAR_ITEMS.map((el) => (
               <a
