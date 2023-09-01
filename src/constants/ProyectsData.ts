@@ -11,7 +11,7 @@ export interface ProyectInterface {
 export const PROYECTS_DATA: ProyectInterface[] = [
   {
     name: 'DinamicJs',
-    img: 'dinamicJs.webp',
+    img: 'dinamicJs',
     desc: 'DinamicJs is a real time javascript playground!!',
     links: {
       repo: 'https://github.com/Waxer59/DinamicJs',
@@ -20,43 +20,39 @@ export const PROYECTS_DATA: ProyectInterface[] = [
   },
   {
     name: 'PikaLang',
-    img: 'pikalang.webp',
+    img: 'pikalang',
     desc: 'A basic programming language written in Go',
     links: {
-      repo: 'https://github.com/Waxer59/PikaLang',
-      url: undefined
+      repo: 'https://github.com/Waxer59/PikaLang'
     }
   },
   {
     name: 'JobReady',
-    img: 'jobReady.webp',
+    img: 'jobReady',
     desc: 'An amazing job interview simulator',
     links: {
-      repo: 'https://github.com/Waxer59/JobReady',
-      url: undefined
+      repo: 'https://github.com/Waxer59/JobReady'
     }
   },
   {
     name: 'ImageUploader',
-    img: 'imageUploader.webp',
+    img: 'imageUploader',
     desc: 'ImageUploader is a website where you can upload images (PNG, JPG & JPEG) and share them with a link so they can be viewed.',
     links: {
-      repo: 'https://github.com/Waxer59/ImageUploader',
-      url: undefined
+      repo: 'https://github.com/Waxer59/ImageUploader'
     }
   },
   {
     name: 'PhotoDisplay',
-    img: 'photoDisplay.webp',
+    img: 'photoDisplay',
     desc: 'PhotoDisplay is a simple photo gallery that allows you to display photos from a URL and see them on the page.',
     links: {
-      repo: 'https://github.com/Waxer59/PhotoDisplay',
-      url: undefined
+      repo: 'https://github.com/Waxer59/PhotoDisplay'
     }
   },
   {
     name: 'DinamicJs Desktop',
-    img: 'dinamicJs-desktop.webp',
+    img: 'dinamicJs-desktop',
     desc: 'Your favorite javascript playground now in desktop, with a beautiful interface and a lot of features.',
     links: {
       repo: 'https://github.com/Waxer59/DinamicJs-Desktop',
@@ -65,16 +61,15 @@ export const PROYECTS_DATA: ProyectInterface[] = [
   },
   {
     name: 'Discord bot',
-    img: 'discordBot.webp',
+    img: 'discordBot',
     desc: 'A discord bot which can do many things!',
     links: {
-      repo: 'https://github.com/Waxer59/discordjs-bot',
-      url: undefined
+      repo: 'https://github.com/Waxer59/discordjs-bot'
     }
   },
   {
     name: 'Wadev Blog',
-    img: 'wadev-blog.webp',
+    img: 'wadev-blog',
     desc: 'This is my blog where you can find me talking about the latest tecnologies.',
     links: {
       repo: 'https://github.com/Waxer59/Wadev-Blog',
@@ -83,20 +78,18 @@ export const PROYECTS_DATA: ProyectInterface[] = [
   },
   {
     name: 'Wikat',
-    img: 'wikat.webp',
+    img: 'wikat',
     desc: 'Would you like to know more about cats, because if so Wikat is your website, you can learn more about each breed with high quality images of each of the breeds.',
     links: {
-      repo: 'https://github.com/Waxer59/Wikat',
-      url: undefined
+      repo: 'https://github.com/Waxer59/Wikat'
     }
   },
   {
     name: 'Cloud Toolbox',
-    img: 'cloud-toolbox.webp',
+    img: 'cloud-toolbox',
     desc: 'Cloud Toolbox is a website that offers multiple tools, such as image background removal, image tagging, website screenshots, document security verification and image text removal.',
     links: {
-      repo: 'https://github.com/Waxer59/Cloud-Toolbox',
-      url: undefined
+      repo: 'https://github.com/Waxer59/Cloud-Toolbox'
     }
   }
 ]

@@ -1,17 +1,18 @@
 ---
 import '../styles/styles.css'
-import '../styles/normalize.css'
 import 'aos/dist/aos.css'
 import {
   Navbar,
   Footer,
-  About,
   Skillset,
   Proyects,
-  Contact,
   BackToTop
-} from '../components'
-import { WaveSvg } from '../components/Icons'
+} from '../components/react'
+import About from "../components/About.astro"
+import Contact from "../components/Contact.astro"
+import { WaveSvg } from '../components/react/Icons'
+import { Image } from 'astro:assets'
+import FlorkImg from "../assets/flork.webp"
 ---
 
 <html lang="en" class="dark">
@@ -24,9 +25,9 @@ import { WaveSvg } from '../components/Icons'
     <meta property="og:title" content="Hey! this is my porfolio :-)" />
     <meta
       property="og:image"
-      content="https://wadev.netlify.app/images/apple-touch-icon.png"
+      content="https://wadev.dev/images/apple-touch-icon.png"
     />
-    <meta property="og:url" content="https://wadev.netlify.app" />
+    <meta property="og:url" content="https://wadev.dev" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Wadev Portfolio" />
@@ -41,36 +42,37 @@ import { WaveSvg } from '../components/Icons'
       content="Hello!, I'm Wadev and I'm a fullstack developer and this is my portfolio, where you can contact me, see all my projects, see my skills or my biography."
     />
     <meta name="author" content="Wadev" />
-    <meta name="keywords" content="Wadev, developer, dev, fullstack, Waxer59" />
+    <meta name="keywords" content="Wadev, developer, dev, fullstack, Waxer59, Wadev developer, Waxer59 developer" />
     <link href="/manifest.json" rel="manifest" />
     <title>Wadev Portfolio</title>
   </head>
   <body
     class="bg-primaryColor transition-all ease-out duration-300 text-grayColor">
     <BackToTop client:only="react" />
-    <Navbar client:load />
+    <Navbar client:only="react" />
     <main class="main">
       <h1 class="text-center mb-[120px] text-[2rem] font-300">
         Hi, i'm <strong>Wadev</strong>
       </h1>
-      <img
-        src="/images/flork.webp"
+      <Image
+        src={FlorkImg}
         width="500"
         height="500"
         alt="Wadev profile picture"
-        class="mainPhoto"
+        class="animate-floating rounded-full mx-auto border-borderColor border-solid border-[5px] bg-primaryColor w-responsivePhoto"
         id="mainPhoto"
       />
       <WaveSvg />
-      <About />
-      <Skillset />
-      <Proyects />
-      <Contact />
+      <About/>
     </main>
+    <Skillset  />
+    <Proyects />
+    <Contact  />
     <Footer />
-    <script>
-      import AOS from 'aos'
-      AOS.init()
-    </script>
   </body>
 </html>
+
+<script>
+  import AOS from 'aos'
+  AOS.init()
+</script>

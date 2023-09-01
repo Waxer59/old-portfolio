@@ -1,5 +1,5 @@
 import ProyectItem from './ProyectItem'
-import { PROYECTS_DATA } from './ProyectsData'
+import { PROYECTS_DATA } from '../../constants/ProyectsData'
 
 const Proyects: React.FC = () => {
   return (
