@@ -21,7 +21,7 @@ const FOOTER_ITEMS: FooterItemProps[] = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-[150px] p-[25px] bg-secondaryColor">
+    <footer className="mt-36 p-6 bg-secondaryColor">
       <ul className="p-0 flex justify-around list-none">
         {FOOTER_ITEMS.map((el) => (
           <FooterItem key={el.href} {...el} />

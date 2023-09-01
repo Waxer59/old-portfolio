@@ -5,7 +5,7 @@ const Proyects: React.FC = () => {
   return (
     <div className="max-w-[1440px] w-[90%] mx-auto">
       <div id="proyects">
-        <h2 className="text-[3rem] font-400 text-center mt-[40px] mb-[100px]">
+        <h2 className="text-4xl sm:text-5xl font-400 text-center mt-10 mb-24">
           Proyects
         </h2>
 

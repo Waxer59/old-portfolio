@@ -10,7 +10,7 @@ const ProyectItem: React.FC<ProyectInterface> = ({
   return (
     <li
       data-aos="zoom-in-up"
-      className="shadow-xl flex flex-col p-[25px] w-[70%] lg:w-[30%] md:w-[35%] justify-center rounded-3xl bg-secondaryColor">
+      className="shadow-xl flex flex-col p-6 w-[70%] lg:w-[30%] md:w-[35%] justify-center rounded-3xl bg-secondaryColor">
       <img
         src={`/proyects/${img}.webp`}
         width="650"
@@ -21,7 +21,7 @@ const ProyectItem: React.FC<ProyectInterface> = ({
       <h3 className="border-t-[1px] border-solid border-gray pt-[20px] pb-0 text-2xl text-center font-semibold">
         {name}
       </h3>
-      <p className="[text-wrap:balance] my-[18px] text-xl sm:text-2xl md:text-[1.2rem] text-center">
+      <p className="[text-wrap:balance] my-[18px] text-xl sm:text-2xl md:text-xl text-center">
         {desc}
       </p>
       <ul className="flex justify-evenly p-0 mt-auto pb-[30px]">
