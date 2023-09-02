@@ -8,11 +8,11 @@ import {
   Projects,
   BackToTop
 } from '../components/react'
-import About from "../components/About.astro"
-import Contact from "../components/Contact.astro"
-import { WaveSvg } from '../components/react/Icons'
 import { Image } from 'astro:assets'
-import FlorkImg from "../assets/flork.webp"
+import { WaveSvg } from '../components/react/Icons'
+import About from '../components/About.astro'
+import Contact from '../components/Contact.astro'
+import FlorkImg from '../assets/flork.webp'
 ---
 
 <html lang="en" class="dark">
@@ -42,32 +42,35 @@ import FlorkImg from "../assets/flork.webp"
       content="Hello!, I'm Wadev and I'm a fullstack developer and this is my portfolio, where you can contact me, see all my projects, see my skills or my biography."
     />
     <meta name="author" content="Wadev" />
-    <meta name="keywords" content="Wadev, developer, dev, fullstack, Waxer59, Wadev developer, Waxer59 developer" />
+    <meta
+      name="keywords"
+      content="Wadev, developer, dev, fullstack, Waxer59, Wadev developer, Waxer59 developer"
+    />
     <link href="/manifest.json" rel="manifest" />
     <title>Wadev Portfolio</title>
   </head>
   <body
-    class="bg-primaryColor transition-all ease-out duration-300 text-grayColor">
+    class="bg-primaryColor transition-colors ease-out duration-300 text-grayColor">
     <BackToTop client:only="react" />
-    <Navbar client:only="react" />
+    <nav class="max-w-[1440px] w-11/12 mx-auto h-20 pt-6 pb-36">
+      <Navbar client:only="react" />
+    </nav>
     <main>
-      <h1 class="text-center mb-[120px] text-2xl sm:text-3xl font-300">
+      <h1 class="text-center mb-24 text-2xl sm:text-3xl font-300">
         Hi, i'm <strong>Wadev</strong>
       </h1>
       <Image
         src={FlorkImg}
-        width="500"
-        height="500"
+        loading="eager"
         alt="Wadev profile picture"
         class="animate-floating rounded-full mx-auto border-borderColor border-solid border-[5px] bg-primaryColor w-responsivePhoto"
-        id="mainPhoto"
       />
-      <WaveSvg />
-      <About/>
+      <WaveSvg className="fill-secondaryColor -mt-24 sm:-mt-48 lg:-mt-80" />
+      <About />
     </main>
-    <Skillset  />
+    <Skillset />
     <Projects />
-    <Contact  />
+    <Contact />
     <Footer />
   </body>
 </html>
