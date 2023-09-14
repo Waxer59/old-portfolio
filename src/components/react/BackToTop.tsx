@@ -35,7 +35,7 @@ const BackToTop: React.FC = () => {
           window.scrollY > 100 && window.innerWidth > 250 ? 'block' : 'none'
         }`
       }}
-      className="cursor-pointer fixed bottom-[20px] right-[15px] z-99 rounded-full text-white border-none text-5xl sm:text-6xl shadow-xl bg-secondaryColor hover:text-hoverColor"
+      className="cursor-pointer fixed bottom-[20px] right-[15px] rounded-full text-white border-none text-5xl sm:text-6xl shadow-xl bg-secondaryColor hover:text-hoverColor z-50"
       aria-label="Back to top button"
       ref={backToTopBtn}
       onClick={onBackToTopBtnClick}>
