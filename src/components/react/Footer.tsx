@@ -8,7 +8,7 @@ const FOOTER_ITEMS: FooterItemProps[] = [
     webName: 'Github'
   },
   {
-    href: '#',
+    href: 'https://www.linkedin.com/in/hugo-boyano-escoz/',
     icon: <FaLinkedin className="text-4xl sm:text-[40px]" />,
     webName: 'Linkedin'
   },
