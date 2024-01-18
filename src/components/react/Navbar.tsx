@@ -8,7 +8,7 @@ const THEMES = {
   light: 'light'
 }
 
-const NAVBAR_ITEMS = ['about', 'skillset', 'projects', 'contact']
+const NAVBAR_ITEMS = ['about', 'projects', 'skillset', 'contact']
 
 const Navbar: React.FC = () => {
   const { setLocalStorageItem, getLocalStorageItem } = useLocalStorage()
