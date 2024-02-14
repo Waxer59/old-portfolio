@@ -1,7 +1,7 @@
 {
-  "name": "Wadev Portfolio",
-  "description": "Hi!, i'm Wadev and i'm a fullstack developer and this is my portfolio web, where you can contact me, look my skills or my bio",
-  "short_name": "Wadev",
+  "name": "Hugo's Portfolio",
+  "description": "Hi!, i'm Hugo and i'm a fullstack developer and this is my portfolio web, where you can contact me, look my skills or my bio",
+  "short_name": "Hugo",
   "icons": [
     {
       "src": "images/android-chrome-192x192.png",

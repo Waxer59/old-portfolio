@@ -68,12 +68,12 @@ export const PROJECTS_DATA: ProyectInterface[] = [
     }
   },
   {
-    name: 'Wadev Blog',
+    name: 'Hugo\'s Blog',
     img: 'wadev-blog',
     desc: 'This is my blog where you can find me talking about the latest tecnologies.',
     links: {
-      repo: 'https://github.com/Waxer59/Wadev-Blog',
-      url: 'https://blog.wadev.dev/'
+      repo: 'https://github.com/Waxer59/Hugo-Blog',
+      url: 'https://blog.hgo.one/'
     }
   },
   {

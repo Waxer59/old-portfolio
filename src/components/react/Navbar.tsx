@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
 
           <a
             className="transition-colors hover:text-hoverColor"
-            href="https://blog.wadev.dev/"
+            href="https://blog.hgo.one/"
             target="_blank"
             rel="noreferrer">
             Blog

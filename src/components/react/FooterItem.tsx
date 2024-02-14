@@ -10,7 +10,7 @@ export const FooterItem = ({ href, icon, webName }: Props) => (
       href={href}
       target="_blank"
       className="transition-colors hover:text-hoverColor"
-      aria-label={`Wadev ${webName} profile`}
+      aria-label={`Hugo's ${webName} profile`}
       rel="noreferrer">
       {icon}
     </a>
