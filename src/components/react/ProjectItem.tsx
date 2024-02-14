@@ -16,7 +16,7 @@ const ProjectItem: React.FC<ProyectInterface> = ({
         width="650"
         height="450"
         className="block mx-auto h-full md:h-[200px] w-full p-[10px] object-cover rounded-[15px]"
-        alt={`${name} wadev project`}
+        alt={`${name} Hugo's project`}
       />
       <h3 className="border-t-[1px] border-solid border-gray pt-[20px] pb-0 text-2xl text-center font-semibold">
         {name}

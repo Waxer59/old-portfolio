@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="relative flex justify-between sm:gap-0 gap-4 items-center">
       <h2 className="text-[1.5rem]">
-        Wa<strong>dev</strong>
+        Hu<strong>go</strong>
       </h2>
 
       <ul className="right-[38px] sm:right-0 sm:relative p-0 items-center ml-auto sm:ml-0 flex gap-2 sm:gap-5 flex-no-wrap text-md sm:text-xl flex-col sm:flex-row">
