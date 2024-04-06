@@ -41,7 +41,7 @@ import FlorkImg from '../assets/flork.webp'
       name="description"
       content="Hello!, I'm Hugo and I'm a fullstack developer and this is my portfolio, where you can contact me, see all my projects, see my skills or my biography."
     />
-    <meta name="theme-color" content="#2c2c2c">
+    <meta name="theme-color" content="#2c2c2c" />
     <meta name="author" content="Hugo" />
     <meta
       name="keywords"
@@ -69,9 +69,11 @@ import FlorkImg from '../assets/flork.webp'
       <WaveSvg className="fill-secondaryColor -mt-24 sm:-mt-48 lg:-mt-80" />
       <About />
     </main>
-    <Projects />
-    <Skillset />
-    <Contact />
+    <div class="max-w-[1440px] w-11/12 mx-auto flex justify-center flex-col gap-32 mt-32">
+      <Projects />
+      <Skillset />
+      <Contact />
+    </div>
     <Footer />
   </body>
 </html>
