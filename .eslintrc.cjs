@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:react/recommended', 'standard-with-typescript', 'prettier'],
+  extends: [
+    'plugin:react/recommended',
+    'standard-with-typescript',
+    'prettier'
+  ],
   ignorePatterns: ['vite.config.ts', 'netlify/', '/*', '!/src'],
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -12,7 +16,7 @@ module.exports = {
     project: ['./tsconfig.json'],
     tsconfigRootDir: __dirname
   },
-  plugins: ['react', 'astro'], 
+  plugins: ['react'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -31,16 +35,5 @@ module.exports = {
     react: {
       version: 'detect'
     }
-  },
-  overrides: [
-    {
-      files: ['*.astro'],
-      parser: 'astro-eslint-parser',
-      parserOptions: {
-        parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.astro']
-      },
-      rules: {}
-    }
-  ]
+  }
 }
