@@ -1,4 +1,6 @@
 User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
-Sitemap: https://hgo.one/
+Allow: /
+
+Host: https://hgo.one/
+
+Sitemap: https://hgo.one/sitemap-index.xml
