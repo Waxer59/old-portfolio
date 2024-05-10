@@ -21,24 +21,31 @@
 
   html {
     scroll-behavior: smooth;
-    scrollbar-color: #5c5c5c;
-    scrollbar-width: thin;
     font-family: sans-serif, Arial, Helvetica;
   }
 
-  /* width */
-  ::-webkit-scrollbar {
-    width: 6px;
+  @supports selector(::-webkit-scrollbar) {
+    /* width */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #5c5c5c;
+      border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6c6c6c;
+    }
   }
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #5c5c5c;
-    border-radius: 5px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #6c6c6c;
+  @supports not selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-color: #5c5c5c transparent;
+      scrollbar-width: thin;
+    }
   }
 }
